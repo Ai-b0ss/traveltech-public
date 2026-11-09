@@ -1,0 +1,26 @@
+name: Public smoke
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Compile source files
+        run: python -m compileall -q experimental prototype
+      - name: Offline UI and backend smoke (no external APIs)
+        shell: pwsh
+        run: python -B -S -X utf8 experimental/full_server.py --port 8833 --smoke --storage "$env:RUNNER_TEMP\traveltech-smoke"
