@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TravelTech — поездка начинается с разговора</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/full.css" />
+    <link rel="stylesheet" href="/trip_plan_card.css" />
+    <script src="/full.js" defer></script>
+    <script src="/offer_sort.js" defer></script>
+    <script src="/trip_plan_card.js" defer></script>
+    <script src="/trip_plan_ui.js" defer></script>
+    <script src="/ui.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-to-content" href="#workspace">Перейти к планированию</a>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="TravelTech, главная"
+        ><span class="brand-mark" aria-hidden="true">О!</span
+        ><span class="brand-copy"><strong>О!дин запрос</strong><small>Ваш ассистент для путешествий</small></span></a
+      >
+      <nav class="topbar-navigation" aria-label="Основная навигация">
+        <a href="#workspace">Планировать</a
+        ><a href="#saved-trips">Мои поездки</a>
+      </nav>
+      <span class="edition">Демо-прототип</span
+      ><span class="offline"><i></i> Работает офлайн</span>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">ИЗ ОДНОГО ЗАПРОСА — В ПУТЕШЕСТВИЕ</div>
+          <h1>Поездка начинается <br />с <em>вашего желания.</em></h1>
+          <p>
+            Напишите, куда хотите поехать, с кем и на какие даты.<br
+              class="desktop-only"
+            />
+            Соберём понятный план и проверим, что важно именно вам.
+          </p>
+          <div class="hero-actions">
+            <button id="new-trip" class="primary">
+              Начать поездку <span>↗</span></button
+            ><button id="open-demo" class="quiet">Посмотреть демо</button>
+          </div>
+          <div class="hero-note">
+            Подбор вариантов без оплаты и бронирования
+          </div>
+        </div>
+        <div class="journey-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="ridge back"></div>
+          <div class="ridge front"></div>
+          <div class="art-label">
+            <span>43°35′ N &nbsp; 39°43′ E</span
+            ><b>Следующая остановка — Сочи</b
+            ><small>Графическая иллюстрация, не фото отеля</small>
+          </div>
+          <span class="art-route">⌁</span>
+        </div>
+      </section>
+      <div id="notice" role="status" aria-live="polite" hidden></div>
+      <section class="workspace" id="workspace">
+        <section
+          class="conversation panel"
+          aria-labelledby="conversation-title"
+        >
+          <div class="panel-top">
+            <div>
+              <span class="eyebrow">ВАШ ПОМОЩНИК</span>
+              <h2 id="conversation-title">Соберём вашу поездку</h2>
+            </div>
+            <span class="assistant-mark" aria-hidden="true">✧</span>
+          </div>
+          <div
+            id="messages"
+            class="messages"
+            role="log"
+            aria-label="История переписки"
+            aria-live="polite"
+            tabindex="0"
+          >
+            <div class="message assistant intro-message">
+              <strong>С чего начнём?</strong>
+              <p>
+                Назовите город, даты и бюджет. Дополнительные пожелания можно
+                добавить позже.
+              </p>
+            </div>
+          </div>
+          <form id="chat-form">
+            <label for="query" class="sr-only"
+              >Опишите поездку или изменение условий</label
+            ><textarea
+              id="query"
+              rows="4"
+              maxlength="1500"
+              placeholder="Например: отель в Казани с 12 по 15 июня, двое взрослых, бюджет до 40 000 ₽"
+            ></textarea>
+            <div class="composer-footer">
+              <span>Enter — отправить · Shift + Enter — новая строка</span
+              ><button
+                id="send"
+                class="primary"
+                type="submit"
+                aria-label="Отправить запрос"
+              >
+                Отправить <span>↑</span>
+              </button>
+            </div>
+          </form>
+          <button id="full-trip-example" class="quiet" type="button">Заполнить пример: Москва → Дубай · MOCK</button>
+          <p
+            id="work-status"
+            class="work-status"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Запрос обрабатывается. Проверьте условия, прежде чем подтверждать
+            изменение.
+          </p>
+          <div
+            class="quick-chips start-suggestions"
+            aria-label="Примеры запросов"
+          >
+            <button
+              type="button"
+              class="chip-btn"
+              data-prompt="Подбери отель в Сочи с 12 по 15 июня 2027 года, 2 взрослых, 1 номер, бюджет 45 000 рублей"
+            >
+              Сочи · 3 ночи
+            </button>
+            <button
+              type="button"
+              class="chip-btn"
+              data-prompt="Найди отель в Стамбуле с 20 по 24 июня 2027 года, 2 взрослых, 1 номер, бюджет 80 000 рублей, с завтраком"
+            >
+              Стамбул · завтрак
+            </button>
+            <button
+              type="button"
+              class="chip-btn"
+              data-prompt="Ищу гостиницу в Париже с 5 по 8 июля 2027 года, 1 взрослый, 1 номер, бюджет 70 000 рублей"
+            >
+              Париж · соло
+            </button>
+          </div>
+          <div class="suggestions edit-suggestions">
+            <button
+              data-prompt="Снизь бюджет до 20 тысяч. Остальное оставь без изменений."
+            >
+              Бюджет ↓</button
+            ><button
+              data-prompt="Увеличь бюджет на 15%, остальные условия не трогай, но покажи, какие предложения всё ещё требуют подтверждения."
+            >
+              +15%</button
+            ><button data-prompt="Нужен завтрак">С завтраком</button
+            ><button data-prompt="Покажи неизвестные налоги и вместимость">
+              Что проверить?
+            </button>
+          </div>
+          <div class="privacy-note">
+            Подтверждение перед каждым изменением · Бронирование и оплата
+            недоступны.
+          </div>
+        </section>
+        <div class="trip-results">
+          <section class="trip panel">
+            <div class="panel-top">
+              <div>
+                <span class="eyebrow">СОГЛАСОВАННЫЕ УСЛОВИЯ</span>
+                <h2 id="trip-title">Путешествие ещё не создано</h2>
+              </div>
+              <span id="revision" class="revision">Черновик</span>
+            </div>
+            <details class="trip-parameters">
+              <summary><span id="trip-glance">Даты, гости и бюджет</span><span class="trip-parameters-toggle">Все условия <span aria-hidden="true">⌄</span></span></summary>
+            <div id="trip-info" class="trip-info">
+              <p class="muted">
+                Откройте демонстрационную поездку или расскажите о своей. Новые
+                условия появятся здесь после подтверждения.
+              </p>
+            </div>
+            </details>
+            <p id="trip-constraint-status" role="status" hidden></p>
+            <div id="trip-actions" class="trip-actions" hidden>
+              <button id="undo" class="quiet">
+                ↶ Отменить последнюю правку</button
+              ><button id="open-whole-trip" class="quiet" type="button" hidden>
+                Открыть отдельный лимит всей поездки</button
+              ><button id="export" class="quiet">↓ Сохранить условия</button
+              ><span id="save-state">Сохранено на компьютере</span>
+            </div>
+            <details id="history">
+              <summary>История согласованных условий</summary>
+              <div id="history-items"></div>
+            </details>
+          </section>
+          <section id="preview" class="preview panel" hidden>
+            <div class="preview-heading">
+              <span class="step">ПРОВЕРКА</span>
+              <div>
+                <span class="eyebrow">ПЕРЕД ПОДТВЕРЖДЕНИЕМ</span>
+                <h2 id="preview-title">Проверьте изменение</h2>
+              </div>
+            </div>
+            <div id="preview-info"></div>
+            <p id="unchanged" class="muted"></p>
+            <p id="preview-impact"></p>
+            <div class="preview-actions">
+              <button id="confirm" class="primary">Подтвердить</button
+              ><button id="cancel" class="quiet">Отклонить</button
+              ><span>Условия изменятся только после подтверждения</span>
+            </div>
+          </section>
+          <section id="full-trip-plan" class="full-trip-plan" aria-labelledby="full-trip-plan-title" hidden>
+            <div class="panel-top">
+              <div><span class="eyebrow">ПЕРЕЛЁТ · ОТЕЛЬ · ТРАНСФЕР</span><h2 id="full-trip-plan-title">Ваша поездка по шагам</h2></div>
+              <span class="revision">TripPlan</span>
+            </div>
+            <p id="full-trip-plan-status" role="status" aria-live="polite"></p>
+            <div class="full-trip-plan-controls">
+              <button type="button" class="primary" data-plan-source="server">Посмотреть учебный маршрут <span aria-hidden="true">↗</span></button>
+              <details class="plan-source-options"><summary>Другой источник</summary><button type="button" class="quiet" data-plan-source="session">Проверить план сессии</button></details>
+            </div>
+            <div id="full-trip-plan-card"></div>
+            <div class="full-trip-plan-controls" aria-label="Учебная корзина и заказ">
+              <button type="button" class="quiet" id="demo-cart-create" disabled>Сохранить DEMO-корзину</button>
+              <button type="button" class="quiet" id="demo-order-create" disabled>Создать DEMO-заказ</button>
+            </div>
+            <p id="demo-cart-status" role="status" aria-live="polite"></p>
+            <div class="full-trip-plan-controls" aria-label="Изменить условия поездки">
+              <button type="button" class="quiet" data-plan-edit="dates">На 2 дня позже</button>
+              <button type="button" class="quiet" data-plan-edit="budget">Изменить бюджет</button>
+              <button type="button" class="quiet" data-plan-edit="guests">Изменить гостей</button>
+            </div>
+            <p class="full-trip-plan-note">Изменения отправляются через диалог и применяются после подтверждения.
+              Фиксированный MOCK не пересчитывается. DEMO: деньги не списываются, ничего не бронируется.
+            </p>
+          </section>
+          <section class="results">
+            <div class="results-heading">
+              <div>
+                <span class="eyebrow">ВАРИАНТЫ ПРОЖИВАНИЯ</span>
+                <h2>Варианты размещения</h2>
+              </div>
+              <span id="result-count" class="revision">0 вариантов</span>
+            </div>
+            <div id="primary-sort-controls" class="primary-sort-controls" hidden>
+              <label for="primary-sort">Сортировать тарифы</label>
+              <select id="primary-sort" aria-label="Сортировка вариантов размещения">
+                <option value="price">По цене: сначала дешевле</option>
+                <option value="price-desc">По цене: сначала дороже</option>
+                <option value="name">По названию гостиницы</option>
+                <option value="supplier">Порядок LiteAPI (без рейтинга)</option>
+              </select>
+              <small>Оценки гостей не используются: подтверждённых отзывов для ранжирования нет.</small>
+            </div>
+            <p id="source-note" class="source-note">
+              Здесь будут варианты с основаниями и неизвестными условиями.
+            </p>
+            <div id="result-summary"></div>
+            <div id="cards" class="cards">
+              <div class="empty-state">
+                <span class="empty-icon">↗</span>
+                <h3>Сначала — ваши планы</h3>
+                <p>
+                  Мы не заполняем неизвестное догадками.<br />Каждый вариант
+                  будет связан со своим источником.
+                </p>
+              </div>
+            </div>
+            <div id="comparison" class="panel compare-panel" hidden>
+              <div class="panel-top">
+                <h3>Сравните выбранные варианты</h3>
+                <button id="clear-compare" class="quiet">Очистить</button>
+              </div>
+              <p id="compare-summary" aria-live="polite"></p>
+              <label
+                ><input type="checkbox" id="compare-differences" /> Только
+                различия в условиях</label
+              >
+              <details class="compare-distance">
+                <summary>Расстояние до интересующей точки</summary>
+                <p>
+                  Введите координаты точки. Вычисление выполняется здесь, без
+                  обращения к модели или поставщику.
+                </p>
+                <div class="compare-anchor-controls">
+                  <label
+                    >Широта<input
+                      id="compare-lat"
+                      type="number"
+                      min="-90"
+                      max="90"
+                      step="any"
+                      inputmode="decimal" /></label
+                  ><label
+                    >Долгота<input
+                      id="compare-lon"
+                      type="number"
+                      min="-180"
+                      max="180"
+                      step="any"
+                      inputmode="decimal" /></label
+                  ><button
+                    id="compare-anchor-apply"
+                    class="quiet"
+                    type="button"
+                  >
+                    Сравнить расстояние</button
+                  ><button
+                    id="compare-anchor-clear"
+                    class="quiet"
+                    type="button"
+                  >
+                    Сбросить точку
+                  </button>
+                </div>
+              </details>
+              <p id="compare-anchor-status" role="status"></p>
+              <div
+                class="compare-scroll"
+                role="region"
+                aria-label="Таблица сравнения тарифов"
+                tabindex="0"
+              >
+                <table id="compare-table"></table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="secondary-actions" aria-labelledby="secondary-title">
+        <div class="secondary-title">
+          <span class="eyebrow">ДОПОЛНИТЕЛЬНО</span>
+          <h2 id="secondary-title">Другие способы планирования</h2>
+          <p>
+            Можно заполнить поля самостоятельно или открыть сохранённую поездку.
+          </p>
+        </div>
+        <details class="saved-trips panel" id="saved-trips">
+          <summary class="saved-trips-summary">
+            <span>Мои поездки</span
+            ><small>Открыть сохранённую или импортировать</small>
+          </summary>
+          <div class="saved-trips-body">
+            <label for="saved-trip" class="sr-only">Сохранённая поездка</label
+            ><select id="saved-trip">
+              <option value="">Выберите сохранённую поездку</option></select
+            ><button id="open-saved" class="quiet">Открыть</button
+            ><button id="import-trip" class="quiet">↑ Импорт условий</button
+            ><input
+              id="import-file"
+              type="file"
+              accept="application/json,.json"
+              hidden
+            /><span>Активная поездка отдельная в каждой вкладке</span>
+          </div>
+        </details>
+        <details id="trip-quick-form" class="trip-form-card">
+          <summary class="form-card-header">
+            <div class="form-card-title-group">
+              <span class="form-badge-icon">✈</span>
+              <div>
+                <span class="form-card-title">Указать параметры вручную</span
+                ><span class="form-card-subtitle"
+                  >Синхронизируются с диалогом или вводятся вручную</span
+                >
+              </div>
+            </div>
+            <span class="form-mode-pill">По желанию</span>
+          </summary>
+          <div class="form-grid">
+            <div class="form-field form-field-city">
+              <label for="form-city"
+                ><span class="field-icon">📍</span> Город</label
+              ><input
+                id="form-city"
+                type="text"
+                placeholder="Сыктывкар, Сочи, Москва..."
+              />
+            </div>
+            <div class="form-field form-field-country">
+              <label for="form-country"
+                ><span class="field-icon">🌍</span> Страна</label
+              ><input
+                id="form-country"
+                type="text"
+                placeholder="RU"
+                value="RU"
+              />
+            </div>
+            <div class="form-field form-field-date">
+              <label for="form-checkin"
+                ><span class="field-icon">📅</span> Заезд</label
+              ><input id="form-checkin" type="date" />
+            </div>
+            <div class="form-field form-field-date">
+              <label for="form-checkout"
+                ><span class="field-icon">📅</span> Выезд</label
+              ><input id="form-checkout" type="date" />
+            </div>
+            <div class="form-field form-field-guests">
+              <label for="form-guests"
+                ><span class="field-icon">👥</span> Гости</label
+              ><select id="form-guests">
+                <option value="1">1 взрослый (соло)</option>
+                <option value="2" selected>2 взрослых</option>
+                <option value="3">3 взрослых</option>
+                <option value="4">4 взрослых</option>
+              </select>
+            </div>
+            <div class="form-field form-field-budget">
+              <label for="form-budget"
+                ><span class="field-icon">₽</span> Бюджет</label
+              ><input
+                id="form-budget"
+                type="number"
+                placeholder="50000"
+                step="1000"
+              />
+            </div>
+            <div class="form-field">
+              <label for="form-currency">Валюта</label
+              ><select id="form-currency">
+                <option>RUB</option>
+                <option>USD</option>
+                <option>EUR</option>
+                <option>CNY</option>
+                <option>GBP</option>
+                <option>JPY</option>
+                <option>KWD</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="form-children">Возраст детей через запятую</label
+              ><input
+                id="form-children"
+                placeholder="Без детей"
+                maxlength="60"
+              />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button
+              id="form-search-btn"
+              type="button"
+              class="primary form-submit-btn"
+            >
+              Искать по форме <span>↗</span></button
+            ><button
+              id="form-clear-btn"
+              type="button"
+              class="quiet form-clear-btn"
+            >
+              Сбросить
+            </button>
+          </div>
+        </details>
+      </section>
+      <details class="source-tools panel" id="source-tools">
+        <summary class="source-tools-heading">
+          <span
+            ><strong>Проверить предложения поставщика</strong
+            ><small>Дополнительный поиск и сведения об источниках</small></span
+          >
+          <span aria-hidden="true" class="settings-chevron">⌄</span>
+        </summary>
+        <section class="current-data" id="current-data">
+          <div class="panel-top">
+            <div>
+              <span class="eyebrow">АКТУАЛЬНЫЕ ДАННЫЕ · ТОЛЬКО ЧТЕНИЕ</span>
+              <h2>Проверить поездку у источника</h2>
+            </div>
+          </div>
+          <p id="data-mode">
+            В START-REAL доступны публичный TourMind, геокодирование и погода.
+            Офлайн-архив выше остаётся доступен.
+          </p>
+          <p>
+            Сначала подтвердите условия поездки выше. Поиск использует её точные
+            даты, состав гостей, число номеров и бюджет. Регион выберите по
+            названию и стране; данные карты не являются гостиничной выдачей.
+          </p>
+          <div class="data-controls">
+            <label for="location-query">Город или точка интереса</label
+            ><input
+              id="location-query"
+              value="Dubai United Arab Emirates"
+              maxlength="150"
+            /><button id="resolve-location" class="quiet" type="button">
+              Найти локацию</button
+            ><button id="resolve-geo" class="quiet" type="button">
+              Найти места · Photon
+            </button>
+          </div>
+          <label for="location-choice">Регион TourMind</label
+          ><select id="location-choice">
+            <option value="">Сначала найдите локацию</option>
+          </select>
+          <div class="data-controls">
+            <label
+              ><input id="nearby-mode" type="checkbox" /> Вокруг точной точки
+              TourMind</label
+            ><label for="nearby-radius">Радиус, км</label
+            ><input
+              id="nearby-radius"
+              type="number"
+              min="0.1"
+              max="20"
+              step="0.1"
+              value="3"
+            /><button id="live-search" class="primary" type="button">
+              Запросить текущие тарифы</button
+            ><button id="live-weather" class="quiet" type="button">
+              Погода на даты поездки
+            </button>
+          </div>
+          <p id="location-evidence" class="muted"></p>
+          <div id="data-feedback" role="status" aria-live="polite"></div>
+          <div class="data-controls">
+            <label for="live-filter">Показать</label
+            ><select id="live-filter">
+              <option value="all">Все тарифы и причины</option>
+              <option value="eligible">Без известных нарушений</option>
+              <option value="reject">Отклонённые</option></select
+            ><label for="live-sort">Сортировка</label
+            ><select id="live-sort">
+              <option value="verified">Сначала проверенные условия</option>
+              <option value="price">
+                По цене: сначала дешевле (с учётом курса, если есть)
+              </option>
+              <option value="price-desc">По цене: сначала дороже</option>
+              <option value="name">По названию гостиницы</option>
+              <option value="supplier">Порядок LiteAPI (без рейтинга)</option>
+            </select>
+          </div>
+          <div id="live-cards" class="cards"></div>
+          <div id="live-comparison" class="compare-scroll" hidden></div>
+          <div id="data-summary" aria-live="polite"></div>
+          <details>
+            <summary>Технические данные и доказательства источника</summary>
+            <pre id="data-details" tabindex="0"></pre>
+          </details>
+          <details class="source-attributions">
+            <summary>Лицензии и сведения об источниках</summary>
+            <small
+              >TourMind public API · цены кандидатов не являются тарифами
+              номеров · налоги могут быть неизвестны · проверка наличия
+              действует только в момент ответа · бронирование и оплата
+              недоступны. Weather: Open-Meteo.com, CC BY 4.0, некоммерческое
+              использование. Геокодирование: © OpenStreetMap contributors /
+              Photon by komoot. FX: ExchangeRate-API,
+              <a href="https://www.exchangerate-api.com" rel="noreferrer"
+                >источник курсов</a
+              >.</small
+            >
+          </details>
+        </section>
+      </details>
+      <details class="engineering panel" id="developer-tools">
+        <summary>
+          <span>Инструменты разработчика</span
+          ><small>Выбор моделей, диагностика, тестовые сценарии</small>
+        </summary>
+        <div class="engineering-body">
+          <label
+            ><input id="agent-mode" type="checkbox" disabled /> Проверить через
+            агента · локальный имитатор, без сети</label
+          >
+
+          <div id="live-lab" class="live-lab" hidden>
+            <div class="eyebrow">
+              ЛАБОРАТОРИЯ МОДЕЛЕЙ · БЕЗ ПЛАТНЫХ СПИСАНИЙ
+            </div>
+            <p id="live-status-text" class="muted">
+              Проверяем безопасный маршрут…
+            </p>
+            <div class="live-actions">
+              <button id="try-free" class="primary" type="button" hidden>
+                Проверить бесплатный AI: keyless → бонусный GLM · один сценарий</button
+              ><button id="try-live" class="primary" type="button">
+                Проверить резерв MiMo после сбоя GLM · 1 запрос
+              </button>
+              <button id="replay-mimo" class="quiet" type="button">
+                Показать сохранённый ответ MiMo (без сети)</button
+              ><button id="recover-local" class="quiet" type="button">
+                Показать восстановление после отказа моделей (без сети)</button
+              ><button id="open-ai-trip" class="quiet" type="button" hidden>
+                Открыть сохранённую поездку AI Lab
+              </button>
+            </div>
+            <small
+              >GLM здесь не вызывается: ошибка HTTP 503 имитируется в памяти.
+              MiMo получит один фиксированный синтетический запрос. Не вводите
+              личные данные. Ответ не изменит поездку до Confirm. Тарифы
+              гостиниц архивные.</small
+            >
+            <div id="live-outcome" role="status" aria-live="polite"></div>
+          </div>
+          <details class="route-controls" id="expert-settings">
+            <summary class="expert-settings-toggle">
+              <span
+                ><strong>Настройки поиска и моделей</strong
+                ><small>Источник данных, модель ИИ, диагностика</small></span
+              >
+              <span aria-hidden="true" class="settings-chevron">⌄</span>
+            </summary>
+            <div class="expert-settings-body">
+              <label for="agent-engine">Исполнение агента</label
+              ><select id="agent-engine">
+                <option value="skills">Система навыков</option></select
+              ><label for="skill-source">Источник для навыков</label
+              ><select id="skill-source">
+                <option value="archive">Архив / тестовые данные</option>
+                <option value="live">
+                  Текущий поиск · настроенный поставщик
+                </option></select
+              ><label
+                ><input type="checkbox" id="jev-advice" /> Дополнительная
+                фоновая проверка надёжности</label
+              ><label for="provider-route">Провайдер AI</label
+              ><select id="provider-route">
+                <option value="Auto" selected>
+                  Автоматический выбор модели
+                </option>
+                <option value="Logicc_GPT6">Logicc · GPT-6.1 Sol</option>
+                <option value="Logicc_Opus">Logicc · Claude 5.5 Opus</option>
+                <option value="Logicc_Astra">Logicc · GPT-6 Astra</option>
+                <option value="Logicc_Sonnet">
+                  Logicc · Claude 5.5 Sonnet
+                </option>
+                <option value="Omnirush_Astra">Omnirush · GPT-6 Astra</option>
+                <option value="Omnirush_Sol_61">Omnirush · GPT-6.1 Sol</option>
+                <option value="IISHKO">ИИ-шко · DeepSeek v4.1 Flash</option>
+                <option value="InkStone_Qwen">InkStone · Qwen</option>
+                <option value="OneAPI">OneAPI · Muse Contributor</option>
+                <option value="Pollinations">Pollinations · GPT-6 Luna</option>
+              </select>
+              <p id="route-mode">Офлайн: локальный агент без расходов.</p>
+            </div>
+          </details>
+
+          <details id="agent-diagnostics" hidden>
+            <summary>Действия агента и основания сравнения</summary>
+            <div id="agent-grounding"></div>
+            <pre id="agent-trace"></pre>
+          </details>
+
+          <p>
+            Симуляция проходит через адаптеры и проверки ответов. Альтернативный
+            ответ не меняет вашу поездку.
+          </p>
+          <div class="lab-controls">
+            <label for="failure">Сценарий отказа</label
+            ><select id="failure">
+              <option value="oneapi_ok">
+                OneAPI работает, Reformboss недоступен
+              </option>
+              <option value="reformboss_ok">
+                OneAPI: 429 → Reformboss работает
+              </option>
+              <option value="invalid_json">
+                Неправильный JSON → резервный маршрут
+              </option>
+              <option value="timeout">Таймаут → неизвестный исход</option>
+              <option value="both_down">Оба шлюза недоступны</option>
+              <option value="jev_down">Jev недоступна</option>
+              <option value="wrong_model">Шлюз вернул другой model ID</option>
+              <option value="payment_required">
+                HTTP 402 → отключение маршрута
+              </option>
+              <option value="truncated">
+                Ответ оборвался: finish_reason=length
+              </option></select
+            ><button id="run-shadow" class="primary">Проверить отказ</button>
+          </div>
+          <div id="shadow-result" aria-live="polite"></div>
+          <p id="supplier-status" class="muted" aria-live="polite">
+            Гостиничный API: ожидание проверки конфигурации. Сейчас только
+            архивные предложения.
+          </p>
+          <p id="model-status" class="muted">
+            OneAPI GLM + MiMo: исследовательская интеграция. Jev —
+            необязательный классификатор. Источник отелей: архив. При отказе
+            модели доступно локальное восстановление.
+          </p>
+        </div>
+      </details>
+    </main>
+    <footer>
+      <span class="brand">traveltech.</span>
+      <p>
+        Подбирайте поездку в своём темпе. Архив — для сравнения, условия — под
+        вашим контролем.
+      </p>
+      <span>Наличие и полный счёт требуют проверки поставщика.</span>
+    </footer>
+    <nav class="mobile-navigation" aria-label="Навигация по поездке">
+      <a id="mobile-chat-link" href="#chat-form">К диалогу</a
+      ><a id="mobile-context-link" href="#saved-trips">Мои поездки</a>
+    </nav>
+  </body>
+</html>

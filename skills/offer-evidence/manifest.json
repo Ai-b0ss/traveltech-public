@@ -1,0 +1,22 @@
+{
+  "id": "offer-evidence",
+  "version": "1.0.0",
+  "description": "Проверка утверждений об отеле, номере и тарифе",
+  "operations": [
+    "validate_constraints"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields",
+    "validated_request",
+    "offers",
+    "facts"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Каждое существенное поле имеет факт либо явный UNKNOWN."
+}

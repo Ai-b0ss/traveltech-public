@@ -1,0 +1,19 @@
+{
+  "id": "constraint-clarification",
+  "version": "1.0.0",
+  "description": "Уточнение существенной неоднозначности",
+  "operations": [
+    "clarify"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Названы needs и сохранено текущее состояние."
+}

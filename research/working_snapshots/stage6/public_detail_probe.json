@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-13",
+  "ledger": [
+    {
+      "method": "initialize",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-06-18",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "travel-search-ru",
+            "version": "2.5.0"
+          }
+        }
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": {
+        "protocolVersion": "2025-06-18",
+        "capabilities": {
+          "experimental": {},
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "subscribe": false,
+            "listChanged": false
+          },
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "serverInfo": {
+          "name": "Travel Search RU MCP",
+          "version": "1.5.0"
+        },
+        "instructions": "Поиск путешествий: пакетные туры (перелёт + отель), отели без перелёта,\nавиабилеты, поезда и экскурсии. Только поиск — бронирование и оплата происходят на сайте сервиса\nпо ссылке из результата.\n\nГорода, страны и курорты передавай по-русски («Москва», «Турция», «Кемер») — сервер сам\nсопоставит их со справочниками. Даты — YYYY-MM-DD и не раньше сегодняшнего дня (день и месяц\nбез года — ближайшая будущая дата); месяц для календаря цен — YYYY-MM. Питание — коды\nRO (без питания), BB (завтраки), HB (полупансион), FB (полный пансион), AI (всё включено),\nUAI (ультра всё включено).\n\nДля быстрой подборки только из Travelata используй get_cheapest_travelata_tours. Полный\nпоиск туров занимает 10–15 секунд: сервер параллельно опрашивает два источника и ждёт\nответа туроператоров. Не вызывай search_tours повторно, пока не пришёл ответ. Если\nрезультатов мало — расширь диапазон дат и ночей или сними фильтры (питание, звёзды,\nбюджет), а не повторяй тот же запрос.\n\nsearch_train_tickets использует кэшированное расписание Tutu.ru: дата формирует ссылку,\nно API не подтверждает рейс, наличие мест или цену на выбранный день. Всегда сообщай это\nпользователю и предлагай проверить детали по ссылке.\n\nОшибки: сообщение о неверных параметрах или «Источник отклонил параметры запроса» — исправь\nзапрос, не повторяй его без изменений. «Источник временно недоступен» — сбой у поставщика:\nповтори один раз позже, затем сообщи пользователю. «Слишком много запросов» или «перегружен» —\nподожди минуту."
+      },
+      "seconds": 5.829
+    },
+    {
+      "method": "notifications/initialized",
+      "request": {
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized",
+        "params": {}
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": null,
+      "seconds": 5.121
+    },
+    {
+      "method": "tools/call",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+          "name": "get_tour_details",
+          "arguments": {
+            "offer_id": "leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199071"
+          }
+        }
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"source\": \"leveltravel\",\n  \"offer_id\": \"leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199071\",\n  \"price\": 1565,\n  \"currency\": \"RUB\",\n  \"transfer\": null,\n  \"flight_type\": null,\n  \"rooms\": [\n    {\n      \"name\": \"Одноместный экономичный\",\n      \"price\": 1565,\n      \"meal\": \"RO\"\n    }\n  ],\n  \"url\": \"https://level.tpm.lv/Gc3yii1H\",\n  \"notes\": [\n    \"Цены и номера — на момент запроса\"\n  ]\n}"
+          }
+        ],
+        "isError": false
+      },
+      "seconds": 6.086
+    }
+  ],
+  "summary": {
+    "status": "DETAIL_RESPONSE_RECEIVED",
+    "result": {
+      "source": "leveltravel",
+      "offer_id": "leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199071",
+      "price": 1565,
+      "currency": "RUB",
+      "transfer": null,
+      "flight_type": null,
+      "rooms": [
+        {
+          "name": "Одноместный экономичный",
+          "price": 1565,
+          "meal": "RO"
+        }
+      ],
+      "url": "https://level.tpm.lv/Gc3yii1H",
+      "notes": [
+        "Цены и номера — на момент запроса"
+      ]
+    }
+  },
+  "booking_calls": 0,
+  "automatic_retries": 0,
+  "independent_inventory_verification": false
+}

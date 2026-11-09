@@ -1,0 +1,22 @@
+{
+  "id": "price-and-feasibility",
+  "version": "1.0.0",
+  "description": "Точная проверка ограничений",
+  "operations": [
+    "validate_constraints"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields",
+    "validated_request",
+    "offers",
+    "facts"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Все жёсткие ограничения имеют локальный результат."
+}

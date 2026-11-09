@@ -1,0 +1,441 @@
+{
+  "operation": "query_room_rates",
+  "endpoint": "https://api.tourmind.com/skill/toc/query_room_rates",
+  "request": {
+    "check_in_date": "2026-10-26",
+    "check_out_date": "2026-10-28",
+    "adults": 2,
+    "room_count": 1,
+    "children": 0,
+    "children_ages": [],
+    "hotel_id": "776238"
+  },
+  "started_at_utc": "2026-10-13T12:56:42.420950+00:00",
+  "attempts": 1,
+  "credentials_sent": false,
+  "booking_or_payment": false,
+  "http_status": 200,
+  "status": "HTTP_RESPONSE_JSON",
+  "response": {
+    "ok": true,
+    "data": {
+      "room_types": [
+        {
+          "room_type_code": "5720592",
+          "name": "Standard Double Room, 1 Double Bed, Courtyard View",
+          "name_cn": "标准双人房, 1 张双人床, 庭院景观",
+          "bed_type_desc": "1 Double Bed",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109941797986795527_99_2",
+                "currency": "CNY",
+                "total_price": 1965.24,
+                "per_night_price": 982.62,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 68.78,
+                  "payable_amount": 2034.02,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-24T12:00:00+08:00",
+                "advanced_hour": 66,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109941797986795526_99_2",
+                "currency": "CNY",
+                "total_price": 2161.98,
+                "per_night_price": 1080.99,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 75.67,
+                  "payable_amount": 2237.65,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "5720596",
+          "name": "Standard Twin Room, 2 Twin Beds, Courtyard View",
+          "name_cn": "标准双床房, 2 张单人床, 庭院景观",
+          "bed_type_desc": "2 Twin Beds",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_b.jpg",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-24T12:00:00+08:00",
+                "advanced_hour": 66,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109941797986795528_99_2",
+                "currency": "CNY",
+                "total_price": 1556.74,
+                "per_night_price": 778.37,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 54.49,
+                  "payable_amount": 1611.23,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "4095721",
+          "name": "Comfort Double or Twin Room",
+          "name_cn": "舒适双人房（1 张双人床或 2 张单人床）",
+          "bed_type_desc": "1 Queen Bed/2 Large Twin Beds",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109991289400029196_39_2",
+                "currency": "CNY",
+                "total_price": 2020.35,
+                "per_night_price": 1010.17,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 70.71,
+                  "payable_amount": 2091.06,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-21T18:00:00+08:00",
+                "advanced_hour": 132,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109991289400029195_39_2",
+                "currency": "CNY",
+                "total_price": 2389.58,
+                "per_night_price": 1194.79,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 83.64,
+                  "payable_amount": 2473.22,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "5293551",
+          "name": "Standard Room",
+          "name_cn": "标准房",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109991289400029190_39_2",
+                "currency": "CNY",
+                "total_price": 1382.65,
+                "per_night_price": 691.32,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 48.39,
+                  "payable_amount": 1431.04,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-21T18:00:00+08:00",
+                "advanced_hour": 132,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109991289400029189_39_2",
+                "currency": "CNY",
+                "total_price": 1635.19,
+                "per_night_price": 817.59,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 57.23,
+                  "payable_amount": 1692.42,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "142853",
+          "name": "Superior Double or Twin Room",
+          "name_cn": "高级双人房（1 张双人床或 2 张单人床）",
+          "bed_type_desc": "2 Twin Beds/1 Double Bed",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "4",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109991746913136640_117_2",
+                "currency": "CNY",
+                "total_price": 1531.62,
+                "per_night_price": 765.81,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 53.61,
+                  "payable_amount": 1585.23,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109991289400029194_39_2",
+                "currency": "CNY",
+                "total_price": 1552.8,
+                "per_night_price": 776.4,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 54.35,
+                  "payable_amount": 1607.15,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "4",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-23T13:00:00+08:00",
+                "advanced_hour": 89,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109991746913136641_117_2",
+                "currency": "CNY",
+                "total_price": 1794.92,
+                "per_night_price": 897.46,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 62.82,
+                  "payable_amount": 1857.74,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-21T18:00:00+08:00",
+                "advanced_hour": 132,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109991289400029193_39_2",
+                "currency": "CNY",
+                "total_price": 1836.41,
+                "per_night_price": 918.2,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 64.27,
+                  "payable_amount": 1900.68,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "5720597",
+          "name": "Comfort Double or Twin Room, Sea View",
+          "name_cn": "舒适双人房或双床房, 海景",
+          "bed_type_desc": "2 Large Twin Beds/1 Queen Bed",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109991289400029192_39_2",
+                "currency": "CNY",
+                "total_price": 1637.72,
+                "per_night_price": 818.86,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 57.32,
+                  "payable_amount": 1695.04,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            },
+            {
+              "max_occupancy": 2,
+              "meal_type": "2",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "free_cancel_before_deadline",
+                "free_cancel_deadline": "2026-10-21T18:00:00+08:00",
+                "advanced_hour": 132,
+                "effective_non_refundable": false
+              },
+              "rate": {
+                "rate_code": "v2109991289400029191_39_2",
+                "currency": "CNY",
+                "total_price": 1937.01,
+                "per_night_price": 968.5,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 67.8,
+                  "payable_amount": 2004.81,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "room_type_code": "12419040",
+          "name": "Economy Double or Twin Room, No Windows",
+          "name_cn": "经济双人房或双床房, 无窗",
+          "bed_type_desc": "2 Twin Beds/1 Queen Bed",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_b.jpg",
+          "products": [
+            {
+              "max_occupancy": 2,
+              "meal_type": "4",
+              "meal_count": 2,
+              "cancellation_policy": {
+                "type": "non_refundable",
+                "effective_non_refundable": true
+              },
+              "rate": {
+                "rate_code": "v2109941797986795529_99_2",
+                "currency": "CNY",
+                "total_price": 1856.2,
+                "per_night_price": 928.1,
+                "payment_type": 1,
+                "is_on_request": false,
+                "stripe_payment_fee": {
+                  "fee_rate": 0.035,
+                  "fee_amount": 64.97,
+                  "payable_amount": 1921.17,
+                  "currency": "CNY",
+                  "notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stripe_payment_fee_notice": "使用 Stripe 支付时，Stripe 平台会按订单金额收取 3.5% 的支付处理手续费。该费用由 Stripe 平台收取，用于信用卡/支付网络处理，并非酒店订单房费、税费或 TourMind 额外订单费用。",
+      "total": 7,
+      "web_url": "https://p.tourmind.com/zh-CN/skills/access#ticket=cZi0SxfeIyi9qyGu0_u74ws2YmKB6NbkhhMh9D8s5TY",
+      "web_url_expires_at": "2026-10-20T20:57:03+08:00",
+      "web_url_one_time": false
+    }
+  },
+  "elapsed_seconds": 21.773,
+  "finished_at_utc": "2026-10-13T12:57:04.193892+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-13",
+  "actual_readonly_api_calls": 20,
+  "baseline_files_byte_identical": [
+    "demo.py",
+    "adapters.py",
+    "test_core.py",
+    "travel_core.py",
+    "benchmark.py",
+    "fixtures/tourmind_36.json",
+    "fixtures/source_capture/tourmind_readonly_dubai_room_rates.json",
+    "fixtures/source_capture/tourmind_readonly_dubai.json"
+  ],
+  "offline_clean_copy_runs": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "-v",
+        "test_stage3"
+      ],
+      "exit_code": 0,
+      "log_tail": "ge3.Stage3Tests.test_unknown_does_not_mean_false) ... ok\ntest_unresolved_city_never_guessed (test_stage3.Stage3Tests.test_unresolved_city_never_guessed) ... ok\ntest_write_operations_absent (test_stage3.Stage3Tests.test_write_operations_absent) ... ok\n\n----------------------------------------------------------------------\nRan 41 tests in 0.014s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "-v",
+        "test_core"
+      ],
+      "exit_code": 0,
+      "log_tail": "test_unicode_regression) ... ok\ntest_unknown_capacity (test_core.CoreTests.test_unknown_capacity) ... ok\ntest_unknown_currency (test_core.CoreTests.test_unknown_currency) ... ok\ntest_zero_not_missing (test_core.CoreTests.test_zero_not_missing) ... ok\n\n----------------------------------------------------------------------\nRan 50 tests in 0.092s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "replay_flow.py"
+      ],
+      "exit_code": 0,
+      "log_tail": "[\n  {\n    \"city\": \"Dubai\",\n    \"products\": 58,\n    \"before\": \"REVIEW\",\n    \"after\": \"REJECT\",\n    \"fee_status\": \"MANDATORY_FEES_REQUIRE_REVIEW\"\n  },\n  {\n    \"city\": \"Istanbul\",\n    \"products\": 14,\n    \"before\": \"REVIEW\",\n    \"after\": \"REJECT\",\n    \"fee_status\": \"NO_MANDATORY_TEXT_IN_CAPTURE_NOT_PROOF_OF_NONE\"\n  }\n]\n"
+    }
+  ],
+  "unit_tests": 91,
+  "actual_guest_review_texts_fetched": false,
+  "inventory_independently_confirmed": false,
+  "natural_language_model_used": false,
+  "automated_image_analysis": false,
+  "live_connector_complete": false,
+  "source_archives_sha256": {
+    "01-OSTROVOK_RESEARCH_2026-10.zip": "8ad186b4992d00bfcefdf2852a596c2087f042d3f1542a6a34f65073886b6dd5",
+    "02-TravelTech_MAX_20261013_ALL_AVAILABLE_ANALYSIS_HANDOFF.zip": "9b2b52e3aac35fc32875056d2294167c55f0701e5e3186c16e1397f65f017b9e"
+  }
+}

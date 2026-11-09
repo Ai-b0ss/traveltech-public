@@ -1,0 +1,4 @@
+# Tests and formatting used during local development.
+pytest>=8,<10
+playwright>=1.50,<2
+ruff==0.13.2

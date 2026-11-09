@@ -1,0 +1,45 @@
+# Only application source and public configuration enter the build context.
+*
+!Dockerfile
+!experimental/
+!experimental/**
+!prototype/
+!prototype/**
+!skills/
+!skills/**
+!vendor/
+!vendor/**
+!model_registry.json
+!INKSTONE_ROUTES.json
+!ROUTE_GUARDS.json
+# Only this public TripPlan contract fixture is needed by the demo runtime.
+!docs/
+!docs/contracts/
+!docs/contracts/trip_plan_v0.json
+!research/
+!research/working_snapshots/
+!research/working_snapshots/stage6/
+!research/working_snapshots/stage6/public_hotel_probe.json
+!research/working_snapshots/stage6/public_detail_probe.json
+
+# Local state, credentials and generated files remain outside the image.
+**/runtime/
+**/runtime/**
+**/__pycache__/
+**/__pycache__/**
+**/.env
+**/.env.*
+**/*.enc
+**/*.key
+**/*.pem
+**/*.p12
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.db-*
+**/*.log
+**/*.jsonl
+**/hotel_keys.json
+**/*.dpapi
+**/screenshots/
+**/screenshots/**

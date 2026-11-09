@@ -1,0 +1,2895 @@
+{
+  "operation": "get_hotel_detail",
+  "endpoint": "https://api.tourmind.com/skill/toc/get_hotel_detail",
+  "request": {
+    "hotel_id": "776238"
+  },
+  "started_at_utc": "2026-10-13T12:57:04.194550+00:00",
+  "attempts": 1,
+  "credentials_sent": false,
+  "booking_or_payment": false,
+  "http_status": 200,
+  "status": "HTTP_RESPONSE_JSON",
+  "response": {
+    "ok": true,
+    "data": {
+      "hotel": {
+        "hotel_id": 776238,
+        "name": "The Hotel Beyaz Saray & Spa",
+        "name_cn": "贝雅兹萨瑞 Spa 酒店",
+        "address": "Mimar Kemalettin Mh. Yeniçeriler Cd. 77Beyazit, 34130",
+        "address_cn": "YENICERILER CAD, BEYAZIT 77",
+        "telephone": "00902124589800",
+        "country_code": "TR",
+        "country": "TURKEY|土耳其",
+        "region_id": 14200,
+        "region_name_long": "Istanbul (and vicinity), Istanbul, Türkiye",
+        "region_name_long_cn": "伊斯坦布尔 (及附近地区), 伊斯坦布尔, 土耳其",
+        "star_rating": 4,
+        "latitude": "41.00925",
+        "longitude": "28.96439",
+        "hotel_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_b.jpg",
+        "hotel_images": [
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_b.jpg",
+          "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_b.jpg"
+        ],
+        "image_groups": [
+          {
+            "category": 3,
+            "caption": "Primary image",
+            "images": [
+              {
+                "hero_image": true,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 10001,
+            "caption": "Lobby",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a8517d2d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a8517d2d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a8517d2d_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 10002,
+            "caption": "Reception",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 10003,
+            "caption": "Lobby sitting area",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1cce0816_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1cce0816_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1cce0816_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/079b9db2_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/079b9db2_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/079b9db2_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/3e469c97_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/3e469c97_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/3e469c97_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 21001,
+            "caption": "Room",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/4f6109ed_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/4f6109ed_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/4f6109ed_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1a84f3b7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1a84f3b7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/1a84f3b7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c30c1aa6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c30c1aa6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c30c1aa6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/cf3017dd_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/cf3017dd_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/cf3017dd_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 22060,
+            "caption": "Floor plan",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/629c4803_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/629c4803_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/629c4803_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 23000,
+            "caption": "Bathroom",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/94d6171b_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/94d6171b_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/94d6171b_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/8fbc4412_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/8fbc4412_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/8fbc4412_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/57eb859a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/57eb859a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/57eb859a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 30002,
+            "caption": "Indoor pool",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/b790763c_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/b790763c_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/b790763c_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a3c929f7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a3c929f7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a3c929f7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ce8af043_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ce8af043_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ce8af043_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 51000,
+            "caption": "Spa",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 51005,
+            "caption": "Steam room",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a98602dc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a98602dc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a98602dc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 51006,
+            "caption": "Turkish bath",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d4959b3f_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d4959b3f_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d4959b3f_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 51020,
+            "caption": "Sauna",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/bda1867c_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/bda1867c_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/bda1867c_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 52001,
+            "caption": "Massage",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/042f899a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/042f899a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/042f899a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ef1c45c6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ef1c45c6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/ef1c45c6_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 52002,
+            "caption": "Spa treatment",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/7ef4b35d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/7ef4b35d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/7ef4b35d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d424b759_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d424b759_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d424b759_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 81003,
+            "caption": "Restaurant",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/fae3e78a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/fae3e78a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/fae3e78a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/806f8d2d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/806f8d2d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/806f8d2d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/110168a6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/110168a6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/110168a6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a6528ac6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a6528ac6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/a6528ac6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d86802ea_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d86802ea_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/d86802ea_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c3814d66_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c3814d66_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/c3814d66_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 82000,
+            "caption": "Bar (on property)",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/eea39e8d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/eea39e8d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/eea39e8d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/74c17023_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/74c17023_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/74c17023_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/083c8fdc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/083c8fdc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/083c8fdc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 83011,
+            "caption": "Interior detail",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e64f9617_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e64f9617_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e64f9617_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 91001,
+            "caption": "Front of property",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e2c5bd92_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e2c5bd92_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/e2c5bd92_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 91024,
+            "caption": "Exterior",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "category": 92007,
+            "caption": "City view",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_z.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/6c36a3a5_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_b.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/6c36a3a5_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_t.jpg",
+                    "local_href": "http://tm-lodging-content.tourmind.cn/lodging/img/776238/6c36a3a5_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "SPA",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4c1c8380_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "SPA 护理",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/7ef4b35d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d424b759_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "主图片",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a116d167_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "住宿正面",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e2c5bd92_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "内部细节",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/e64f9617_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "前台",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/81598c31_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "土耳其浴",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d4959b3f_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "城市景观",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/6c36a3a5_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "外观",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5389133f_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "大堂",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a8517d2d_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "大堂休息区",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1cce0816_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/079b9db2_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/3e469c97_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "客房",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1a84f3b7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c30c1aa6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cf3017dd_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/743524c2_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/adc329c7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/10e6502e_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/1ccde052_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5d68c7e3_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c089a2bb_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4746b533_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8e9dd298_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/92d11455_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4cd66da7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/9e1e9e88_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "室内游泳池",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/b790763c_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a3c929f7_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ce8af043_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "按摩",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/042f899a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/ef1c45c6_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "桑拿",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/bda1867c_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "楼层平面图",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/629c4803_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "浴室",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/94d6171b_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/8fbc4412_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/57eb859a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/5020aced_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "蒸汽房",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a98602dc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "酒吧（店内）",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/eea39e8d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/74c17023_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/083c8fdc_t.jpg"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "caption": "餐厅",
+            "images": [
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/fae3e78a_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/806f8d2d_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/110168a6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/a6528ac6_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/d86802ea_t.jpg"
+                  }
+                }
+              },
+              {
+                "hero_image": false,
+                "links": {
+                  "1000px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_z.jpg"
+                  },
+                  "350px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_b.jpg"
+                  },
+                  "70px": {
+                    "method": "GET",
+                    "href": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/c3814d66_t.jpg"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "checkin": {
+          "begin_time": "2:00 PM",
+          "end_time": "anytime",
+          "instructions": "<ul>  <li>Extra-person charges may apply and vary depending on property policy</li><li>Government-issued photo identification and a credit card, debit card, or cash deposit may be required at check-in for incidental charges</li><li>Special requests are subject to availability upon check-in and may incur additional charges; special requests cannot be guaranteed</li><li>This property accepts credit cards, debit cards, and cash</li><li>Cashless transactions are available</li><li>Safety features at this property include a carbon monoxide detector, a fire extinguisher, a smoke detector, a security system, and a first aid kit</li><li>This property has outdoor spaces, such as balconies, patios, terraces which may not be suitable for children; if you have concerns, we recommend contacting the property prior to your arrival to confirm they can accommodate you in a suitable room</li>  </ul>",
+          "special_instructions": "This property offers transfers from the airport (surcharges may apply). Guests must contact the property with arrival details before travel, using the contact information on the booking confirmation. Front desk staff will greet guests on arrival at the property. Information provided by the property may be translated using automated translation tools.",
+          "min_age": ""
+        },
+        "checkout": {
+          "time": "12:00 PM"
+        },
+        "descriptions": {
+          "Location": "With a stay at The Hotel Beyaz Saray - Grand Bazaar in Istanbul (Istanbul City Center), you'll be a 3-minute walk from Grand Bazaar and 14 minutes by foot from Sultanahmet Square.  This spa hotel is 0.7 mi (1.1 km) from Süleymaniye Mosque and 0.8 mi (1.2 km) from Eminönü Square.",
+          "Headline": "Near Grand Bazaar",
+          "BusinessAmenities": "Featured amenities include complimentary newspapers in the lobby, dry cleaning/laundry services, and a 24-hour front desk. A roundtrip airport shuttle is provided for a surcharge (available 24 hours).",
+          "Rooms": "Make yourself at home in one of the 96 air-conditioned rooms featuring minibars and LCD televisions. Complimentary wired and wireless internet access keeps you connected, and satellite programming provides entertainment. Private bathrooms with showers feature rainfall showerheads and complimentary toiletries. Conveniences include phones, as well as laptop-compatible safes and electric kettles.",
+          "Attractions": "Distances are displayed to the nearest 0.1 mile and kilometer. <br /> <p>Beyazit Square - 0.2 km / 0.1 mi <br /> Grand Bazaar - 0.2 km / 0.1 mi <br /> Süleymaniye Mosque - 1.1 km / 0.7 mi <br /> Sultanahmet Square - 1.1 km / 0.7 mi <br /> Egyptian Bazaar - 1.1 km / 0.7 mi <br /> Turkish and Islamic Art Museum - 1.2 km / 0.7 mi <br /> Basilica Cistern - 1.2 km / 0.8 mi <br /> Eminönü Square - 1.2 km / 0.8 mi <br /> Little Hagia Sophia - 1.3 km / 0.8 mi <br /> Hagia Sophia - 1.4 km / 0.8 mi <br /> Gülhane Park - 1.4 km / 0.9 mi <br /> Blue Mosque - 1.4 km / 0.9 mi <br /> Golden Horn - 1.6 km / 1 mi <br /> Istanbul Archaeology Museums - 1.6 km / 1 mi <br /> Bosphorus - 1.6 km / 1 mi <br /> </p><p>The nearest airports are:<br />Istanbul Sabiha Gokcen Intl. Airport (SAW) - 44.5 km / 27.7 mi<br /> Istanbul Airport (IST) - 46.4 km / 28.8 mi<br /> </p><p></p>"
+        },
+        "amenities_hotel": [
+          {
+            "id": "1073744070",
+            "name": "Shopping mall on site",
+            "value": ""
+          },
+          {
+            "id": "1073744288",
+            "name": "Distance from property (ft) - 656",
+            "value": "656"
+          },
+          {
+            "id": "1073744293",
+            "name": "Distance from property (meters) - 200",
+            "value": "200"
+          },
+          {
+            "id": "1073744740",
+            "name": "Wheelchair accessible – no",
+            "value": ""
+          },
+          {
+            "id": "1073745332",
+            "name": "No accessible shuttle",
+            "value": ""
+          },
+          {
+            "id": "1073745333",
+            "name": "Accessible airport shuttle",
+            "value": ""
+          },
+          {
+            "id": "2016",
+            "name": "Safe-deposit box at front desk",
+            "value": ""
+          },
+          {
+            "id": "2017",
+            "name": "Spa services on site",
+            "value": ""
+          },
+          {
+            "id": "2043",
+            "name": "Multilingual staff",
+            "value": ""
+          },
+          {
+            "id": "2047",
+            "name": "Free newspapers in lobby",
+            "value": ""
+          },
+          {
+            "id": "2063",
+            "name": "24-hour front desk",
+            "value": ""
+          },
+          {
+            "id": "2070",
+            "name": "Dry cleaning/laundry service",
+            "value": ""
+          },
+          {
+            "id": "2123",
+            "name": "Full-service spa",
+            "value": ""
+          },
+          {
+            "id": "2134",
+            "name": "Steam room",
+            "value": ""
+          },
+          {
+            "id": "2135",
+            "name": "Sauna",
+            "value": ""
+          },
+          {
+            "id": "2349",
+            "name": "Designated smoking areas",
+            "value": ""
+          },
+          {
+            "id": "2387",
+            "name": "Tours/ticket assistance",
+            "value": ""
+          },
+          {
+            "id": "2390",
+            "name": "Free WiFi",
+            "value": ""
+          },
+          {
+            "id": "2529",
+            "name": "Area shuttle (surcharge)",
+            "value": ""
+          },
+          {
+            "id": "2537",
+            "name": "Number of restaurants - 1",
+            "value": "1"
+          },
+          {
+            "id": "2820",
+            "name": "Number of indoor pools - 1",
+            "value": "1"
+          },
+          {
+            "id": "324",
+            "name": "Coffee/tea in common areas",
+            "value": ""
+          },
+          {
+            "id": "361",
+            "name": "Breakfast available (surcharge)",
+            "value": ""
+          },
+          {
+            "id": "369",
+            "name": "Laundry facilities",
+            "value": ""
+          },
+          {
+            "id": "372",
+            "name": "Television in common areas",
+            "value": ""
+          },
+          {
+            "id": "385",
+            "name": "Library",
+            "value": ""
+          },
+          {
+            "id": "3913",
+            "name": "Number of bars/lounges - 1",
+            "value": "1"
+          },
+          {
+            "id": "3929",
+            "name": "Number of coffee shops/cafes - 1",
+            "value": "1"
+          },
+          {
+            "id": "40",
+            "name": "Hair salon",
+            "value": ""
+          },
+          {
+            "id": "4003",
+            "name": "Luggage storage",
+            "value": ""
+          },
+          {
+            "id": "43",
+            "name": "Concierge services",
+            "value": ""
+          },
+          {
+            "id": "45",
+            "name": "Shopping on site",
+            "value": ""
+          },
+          {
+            "id": "56",
+            "name": "Airport transportation (surcharge)",
+            "value": ""
+          }
+        ],
+        "amenities_room": [
+          {
+            "id": "1",
+            "name": "Air conditioning",
+            "value": ""
+          },
+          {
+            "id": "1073742816",
+            "name": "Rollaway/extra beds (surcharge)",
+            "value": ""
+          },
+          {
+            "id": "1073743284",
+            "name": "Heating",
+            "value": ""
+          },
+          {
+            "id": "1073743289",
+            "name": "Electric kettle",
+            "value": ""
+          },
+          {
+            "id": "1073743370",
+            "name": "Towels provided",
+            "value": ""
+          },
+          {
+            "id": "1073743371",
+            "name": "Bedsheets provided",
+            "value": ""
+          },
+          {
+            "id": "1073744201",
+            "name": "Soap",
+            "value": ""
+          },
+          {
+            "id": "1073744202",
+            "name": "Shampoo",
+            "value": ""
+          },
+          {
+            "id": "1073744203",
+            "name": "Toilet paper",
+            "value": ""
+          },
+          {
+            "id": "1073744237",
+            "name": "Laptop-friendly workspace",
+            "value": ""
+          },
+          {
+            "id": "1073744667",
+            "name": "Low-height counters/sink",
+            "value": ""
+          },
+          {
+            "id": "1073744690",
+            "name": "Wheelchair-width doorways",
+            "value": ""
+          },
+          {
+            "id": "1073744706",
+            "name": "Wardrobe or closet",
+            "value": ""
+          },
+          {
+            "id": "1073744766",
+            "name": "Toothbrush and toothpaste not available",
+            "value": ""
+          },
+          {
+            "id": "1073744801",
+            "name": "Location - ground floor",
+            "value": ""
+          },
+          {
+            "id": "1073744826",
+            "name": "Number of days between towel changes: 2",
+            "value": ""
+          },
+          {
+            "id": "1073744829",
+            "name": "Number of days between bed sheet changes: 2",
+            "value": ""
+          },
+          {
+            "id": "1073745367",
+            "name": "Hardwood flooring in room",
+            "value": ""
+          },
+          {
+            "id": "121",
+            "name": "Wheelchair accessible",
+            "value": ""
+          },
+          {
+            "id": "131",
+            "name": "Minibar",
+            "value": ""
+          },
+          {
+            "id": "132",
+            "name": "Coffee/tea maker",
+            "value": ""
+          },
+          {
+            "id": "133",
+            "name": "Daily housekeeping",
+            "value": ""
+          },
+          {
+            "id": "136",
+            "name": "Phone",
+            "value": ""
+          },
+          {
+            "id": "141",
+            "name": "Private bathroom",
+            "value": ""
+          },
+          {
+            "id": "143",
+            "name": "Free toiletries",
+            "value": ""
+          },
+          {
+            "id": "144",
+            "name": "Hair dryer",
+            "value": ""
+          },
+          {
+            "id": "2015",
+            "name": "Room service (24 hours)",
+            "value": ""
+          },
+          {
+            "id": "2026",
+            "name": "Desk",
+            "value": ""
+          },
+          {
+            "id": "2034",
+            "name": "Premium bedding",
+            "value": ""
+          },
+          {
+            "id": "2054",
+            "name": "Soundproofed rooms",
+            "value": ""
+          },
+          {
+            "id": "2055",
+            "name": "Iron/ironing board (on request)",
+            "value": ""
+          },
+          {
+            "id": "2057",
+            "name": "Free bottled water",
+            "value": ""
+          },
+          {
+            "id": "2162",
+            "name": "Slippers",
+            "value": ""
+          },
+          {
+            "id": "2166",
+            "name": "Shower only",
+            "value": ""
+          },
+          {
+            "id": "2389",
+            "name": "In-room safe (laptop compatible)",
+            "value": ""
+          },
+          {
+            "id": "2396",
+            "name": "Satellite TV service",
+            "value": ""
+          },
+          {
+            "id": "2403",
+            "name": "Free WiFi",
+            "value": ""
+          },
+          {
+            "id": "2405",
+            "name": "Free wired internet",
+            "value": ""
+          },
+          {
+            "id": "2561",
+            "name": "Egyptian-cotton sheets",
+            "value": ""
+          },
+          {
+            "id": "2575",
+            "name": "LCD TV",
+            "value": ""
+          },
+          {
+            "id": "2580",
+            "name": "TV size measurement: inch",
+            "value": ""
+          },
+          {
+            "id": "26",
+            "name": "Television",
+            "value": ""
+          },
+          {
+            "id": "3267",
+            "name": "No windows",
+            "value": ""
+          },
+          {
+            "id": "3502",
+            "name": "Rainfall showerhead",
+            "value": ""
+          },
+          {
+            "id": "4134",
+            "name": "City view",
+            "value": ""
+          },
+          {
+            "id": "4309",
+            "name": "Sea view",
+            "value": ""
+          },
+          {
+            "id": "4951",
+            "name": "Free cribs/infant beds",
+            "value": ""
+          },
+          {
+            "id": "6176",
+            "name": "Non-Smoking",
+            "value": ""
+          },
+          {
+            "id": "6212",
+            "name": "Smoking",
+            "value": ""
+          }
+        ],
+        "policies": {
+          "know_before_you_go": "<ul>  <li>Pool access available from noon to 6:00 PM.</li><li>Up to 2 children 6 years old and younger stay free when occupying the parent or guardian's room, using existing bedding. </li><li>Cashless payment methods are available for all transactions.</li> </ul>"
+        },
+        "fees": {
+          "mandatory": "",
+          "optional": "<ul> <li>Fee for buffet breakfast: approximately EUR 10 for adults and EUR 6 for children</li><li>Airport shuttle fee: EUR 90 per vehicle (one-way, maximum occupancy 4)</li><li>Nearby parking fee: EUR 10 per day (656 ft away)</li><li>Rollaway bed fee: EUR 35.0 per night</li></ul> <p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change. </p>"
+        }
+      },
+      "rooms": [
+        {
+          "room_id": "142851",
+          "name": "Single Room",
+          "name_cn": "单人房",
+          "occupancy": 2,
+          "bed_type": 2,
+          "bed_type_desc": "1 Queen Bed",
+          "bed_type_desc_cn": "1 张大床"
+        },
+        {
+          "room_id": "142852",
+          "name": "Double Room",
+          "name_cn": "双人房（1 张双人床）",
+          "occupancy": 2,
+          "bed_type": 2,
+          "bed_type_desc": "1 Double Bed",
+          "bed_type_desc_cn": "1 张双人床"
+        },
+        {
+          "room_id": "142853",
+          "name": "Superior Double or Twin Room",
+          "name_cn": "高级双人房（1 张双人床或 2 张单人床）",
+          "occupancy": 2,
+          "bed_type": 9,
+          "bed_type_desc": "2 Twin Beds/1 Double Bed",
+          "bed_type_desc_cn": "2 张单人床/1 张双人床"
+        },
+        {
+          "room_id": "142854",
+          "name": "Triple Room",
+          "name_cn": "三人房",
+          "occupancy": 2,
+          "bed_type": 4,
+          "bed_type_desc": "3 Twin Beds",
+          "bed_type_desc_cn": "3 张单人床"
+        },
+        {
+          "room_id": "4095720",
+          "name": "Standard Twin Room, 2 Twin Beds, Smoking, Courtyard View",
+          "name_cn": "标准双人房（2 张单人床）, 2 张单人床, 吸烟房, 庭院景观",
+          "bed_type": 3,
+          "bed_type_desc": "2 Twin Beds",
+          "bed_type_desc_cn": "2 张单人床"
+        },
+        {
+          "room_id": "4095721",
+          "name": "Comfort Double or Twin Room",
+          "name_cn": "舒适双人房（1 张双人床或 2 张单人床）",
+          "bed_type": 9,
+          "bed_type_desc": "1 Queen Bed/2 Large Twin Beds",
+          "bed_type_desc_cn": "2 张大号单人床/1 张大床"
+        },
+        {
+          "room_id": "5293551",
+          "name": "Standard Room",
+          "name_cn": "标准房",
+          "area_range": "0"
+        },
+        {
+          "room_id": "5720595",
+          "name": "Superior Double or Twin Room, City View",
+          "name_cn": "高级双人房或双床房, 城市景观",
+          "bed_type": 9,
+          "bed_type_desc": "2 Twin Beds/1 Double Bed",
+          "bed_type_desc_cn": "2 张单人床/1 张双人床"
+        },
+        {
+          "room_id": "5720597",
+          "name": "Comfort Double or Twin Room, Sea View",
+          "name_cn": "舒适双人房或双床房, 海景",
+          "bed_type": 9,
+          "bed_type_desc": "2 Large Twin Beds/1 Queen Bed",
+          "bed_type_desc_cn": "2 张大号单人床/1 张大床"
+        },
+        {
+          "room_id": "5848110",
+          "name": "Superior Double or Twin Room, City View",
+          "name_cn": "高级双人房或双床房, 城市景观",
+          "bed_type": 9,
+          "bed_type_desc": "1 Double Bed/2 Twin Beds",
+          "bed_type_desc_cn": "2 张单人床/1 张双人床"
+        },
+        {
+          "room_id": "5921720",
+          "name": "Comfort Double or Twin Room, Sea View",
+          "name_cn": "舒适双人房或双床房, 海景",
+          "bed_type": 9,
+          "bed_type_desc": "1 Queen Bed/2 Large Twin Beds",
+          "bed_type_desc_cn": "2 张大号单人床/1 张大床"
+        },
+        {
+          "room_id": "6449940",
+          "name": "Economy Double or Twin Room No Windows Double NR",
+          "name_cn": "Economy Double or Twin Room No Windows Double NR",
+          "area_range": "0",
+          "bed_type": 9
+        },
+        {
+          "room_id": "5720593",
+          "name": "Standard Single Room, Courtyard View",
+          "name_cn": "标准单人房, 庭院景观",
+          "bed_type": 64,
+          "bed_type_desc": "1 Queen Bed",
+          "bed_type_desc_cn": "1 张大床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/cb1c02dc_b.jpg"
+        },
+        {
+          "room_id": "5720592",
+          "name": "Standard Double Room, 1 Double Bed, Courtyard View",
+          "name_cn": "标准双人房, 1 张双人床, 庭院景观",
+          "bed_type": 2,
+          "bed_type_desc": "1 Double Bed",
+          "bed_type_desc_cn": "1 张双人床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg"
+        },
+        {
+          "room_id": "5720594",
+          "name": "Standard Triple Room, Courtyard View",
+          "name_cn": "标准三人房, 庭院景观",
+          "bed_type": 4,
+          "bed_type_desc": "3 Twin Beds",
+          "bed_type_desc_cn": "3 张单人床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/958d3c07_b.jpg"
+        },
+        {
+          "room_id": "142855",
+          "name": "Superior Family Room",
+          "name_cn": "Superior Family Room",
+          "occupancy": 3,
+          "bed_type": 5,
+          "bed_type_desc": "1 Double Bed and 1 Twin Bed",
+          "bed_type_desc_cn": "1 张双人床和 1 张单人床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/06a7aba4_b.jpg"
+        },
+        {
+          "room_id": "5720596",
+          "name": "Standard Twin Room, 2 Twin Beds, Courtyard View",
+          "name_cn": "标准双床房, 2 张单人床, 庭院景观",
+          "bed_type": 3,
+          "bed_type_desc": "2 Twin Beds",
+          "bed_type_desc_cn": "2 张单人床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/dfadf915_b.jpg"
+        },
+        {
+          "room_id": "12419040",
+          "name": "Economy Double or Twin Room, No Windows",
+          "name_cn": "经济双人房或双床房, 无窗",
+          "bed_type": 9,
+          "bed_type_desc": "2 Twin Beds/1 Queen Bed",
+          "bed_type_desc_cn": "2 张单人床/1 张大床",
+          "basic_room_image": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/4f6109ed_b.jpg"
+        },
+        {
+          "room_id": "965101",
+          "name": "Superior Room",
+          "name_cn": "高级房",
+          "area_range": "0",
+          "occupancy": 2
+        },
+        {
+          "room_id": "965102",
+          "name": "Superior Family Room",
+          "name_cn": "Superior Family Room",
+          "area_range": "0",
+          "occupancy": 2,
+          "bed_type": 9
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 6.342,
+  "finished_at_utc": "2026-10-13T12:57:10.536746+00:00"
+}

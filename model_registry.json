@@ -1,0 +1,520 @@
+{
+  "schema": 1,
+  "default_mode": "OFFLINE_DEMO",
+  "modes": [
+    "OFFLINE_DEMO",
+    "SHADOW",
+    "LIVE_TEST"
+  ],
+  "live_web_enabled": false,
+  "current_prices_not_verified": true,
+  "historical_observation_date": "2026-10-13",
+  "source_archive_sha256": "7ac567be97dff7ada06870b196d7b0aafdb58adf3530217e3eefc235cdfca94d",
+  "routes": [
+    {
+      "provider": "OneAPI",
+      "endpoint": "https://api.oneapi.id/v1/chat/completions",
+      "model_id": "mimo-v2.6-flash",
+      "api_type": "CHAT_COMPLETIONS",
+      "tasks": [
+        "GENERAL_PARSE",
+        "CLARIFICATION"
+      ],
+      "parameters": {
+        "max_output_tokens_reference": 2048,
+        "reasoning": null,
+        "reasoning_support": "UNKNOWN"
+      },
+      "approximate_pricing_per_token_usd": {
+        "prompt": "0.00000007",
+        "completion": "0.00000014",
+        "input_cache_read": "0.0000000014",
+        "input_cache_write": "0.00000007",
+        "discount": 0.5
+      },
+      "price_status": "HISTORICAL_CATALOG_20261013",
+      "availability_current_key": "ACCOUNT_AND_CATALOG_GET_VERIFIED_INFERENCE_UNKNOWN",
+      "historical_availability": "COMPLETE_MATCHED_MODEL_RESPONSE",
+      "limit_state_current": "BLOCKED_PREVIOUS_UNKNOWN_OUTCOME",
+      "historical_account_limits": {
+        "rpm_limit": 50,
+        "concurrency_limit": 10,
+        "allowed_models": [],
+        "quota_limit": null
+      },
+      "error_history": [],
+      "observed_latency_seconds_median": 18.0565,
+      "requested_model": "mimo-v2.6-flash",
+      "reported_models_observed": [
+        "mimo-v2.6-flash"
+      ],
+      "last_successful_test": "2026-10-13T20:29:29.429622+00:00",
+      "confirmation_type": "ARCHIVED_RAW_GATEWAY_RESPONSES",
+      "quality_confidence": "SMALL_SYNTHETIC_SAMPLE_NOT_CALIBRATED",
+      "historical_corrected_quality": {
+        "provider": "OneAPI",
+        "model": "mimo-v2.6-flash",
+        "dispatched": 4,
+        "http_200": 4,
+        "valid_correct_model": 4,
+        "passed_all_fields": 3,
+        "mean_field_score_completed": 0.886,
+        "latency_success_median": 13.486,
+        "cases": {
+          "context_delta": {
+            "score": 1.0,
+            "seconds": 7.754,
+            "failed_flags": []
+          },
+          "ambiguity_invalid": {
+            "score": 1.0,
+            "seconds": 9.526,
+            "failed_flags": []
+          },
+          "holiday_create": {
+            "score": 0.5455,
+            "seconds": 17.446,
+            "failed_flags": [
+              1,
+              5,
+              7,
+              8,
+              9
+            ]
+          },
+          "evidence_ranking": {
+            "score": 1.0,
+            "seconds": 18.667,
+            "failed_flags": []
+          }
+        }
+      },
+      "evidence_ref": "runs/reference_models/v3/attempts.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false,
+      "supports_response_format": false
+    },
+    {
+      "provider": "OneAPI",
+      "endpoint": "https://api.oneapi.id/v1/chat/completions",
+      "model_id": "glm-5.3-flash",
+      "api_type": "CHAT_COMPLETIONS",
+      "tasks": [
+        "GENERAL_PARSE",
+        "CLARIFICATION"
+      ],
+      "parameters": {
+        "max_output_tokens_reference": 2048,
+        "reasoning": null,
+        "reasoning_support": "UNKNOWN"
+      },
+      "approximate_pricing_per_token_usd": {
+        "prompt": "0.000000075",
+        "completion": "0.00000025",
+        "input_cache_read": "0.000000015",
+        "discount": 0.5
+      },
+      "price_status": "HISTORICAL_CATALOG_20261013",
+      "availability_current_key": "NOT_PROVEN_THIS_BUILD",
+      "historical_availability": "COMPLETE_MATCHED_MODEL_RESPONSE",
+      "limit_state_current": "UNKNOWN",
+      "historical_account_limits": {
+        "rpm_limit": 50,
+        "concurrency_limit": 10,
+        "allowed_models": [],
+        "quota_limit": null
+      },
+      "error_history": [],
+      "observed_latency_seconds_median": 5.859999999999999,
+      "requested_model": "glm-5.3-flash",
+      "reported_models_observed": [
+        "glm-5.3-flash"
+      ],
+      "last_successful_test": "2026-10-13T20:29:48.999080+00:00",
+      "confirmation_type": "ARCHIVED_RAW_GATEWAY_RESPONSES",
+      "quality_confidence": "SMALL_SYNTHETIC_SAMPLE_NOT_CALIBRATED",
+      "historical_corrected_quality": {
+        "provider": "OneAPI",
+        "model": "glm-5.3-flash",
+        "dispatched": 4,
+        "http_200": 4,
+        "valid_correct_model": 3,
+        "passed_all_fields": 3,
+        "mean_field_score_completed": 1.0,
+        "latency_success_median": 7.064,
+        "cases": {
+          "holiday_create": {
+            "score": null,
+            "seconds": 20.778,
+            "failed_flags": null
+          },
+          "evidence_ranking": {
+            "score": 1.0,
+            "seconds": 26.15,
+            "failed_flags": []
+          },
+          "context_delta": {
+            "score": 1.0,
+            "seconds": 4.656,
+            "failed_flags": []
+          },
+          "ambiguity_invalid": {
+            "score": 1.0,
+            "seconds": 7.064,
+            "failed_flags": []
+          }
+        }
+      },
+      "evidence_ref": "runs/reference_models/v3/attempts.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false
+    },
+    {
+      "provider": "Reformboss",
+      "endpoint": "https://api.reformboss.com/v1/chat/completions",
+      "model_id": "deepseek-v4.1-flash",
+      "api_type": "CHAT_COMPLETIONS",
+      "tasks": [
+        "GENERAL_PARSE",
+        "CLARIFICATION"
+      ],
+      "parameters": {
+        "max_output_tokens_reference": 2048,
+        "reasoning": null,
+        "reasoning_support": "UNKNOWN"
+      },
+      "approximate_pricing_per_token_usd": null,
+      "price_status": "UNKNOWN_CURRENT_PRICE",
+      "availability_current_key": "NOT_PROVEN_THIS_BUILD",
+      "historical_availability": "COMPLETE_MATCHED_MODEL_RESPONSE",
+      "limit_state_current": "UNKNOWN",
+      "historical_account_limits": null,
+      "error_history": [
+        {
+          "http": null,
+          "error": "TimeoutError",
+          "requested_model": "deepseek-v4.1-flash",
+          "reported_model": null,
+          "at": "2026-10-13T20:29:20.932755+00:00"
+        }
+      ],
+      "observed_latency_seconds_median": 9.946,
+      "requested_model": "deepseek-v4.1-flash",
+      "reported_models_observed": [
+        "deepseek-v4.1-flash"
+      ],
+      "last_successful_test": "2026-10-13T20:34:44.115037+00:00",
+      "confirmation_type": "ARCHIVED_RAW_GATEWAY_RESPONSES",
+      "quality_confidence": "SMALL_SYNTHETIC_SAMPLE_NOT_CALIBRATED",
+      "historical_corrected_quality": {
+        "provider": "Reformboss",
+        "model": "deepseek-v4.1-flash",
+        "dispatched": 4,
+        "http_200": 3,
+        "valid_correct_model": 3,
+        "passed_all_fields": 3,
+        "mean_field_score_completed": 1.0,
+        "latency_success_median": 13.285,
+        "cases": {
+          "evidence_ranking": {
+            "score": 1.0,
+            "seconds": 17.494,
+            "failed_flags": []
+          },
+          "holiday_create": {
+            "score": null,
+            "seconds": 25.425,
+            "failed_flags": null
+          },
+          "context_delta": {
+            "score": 1.0,
+            "seconds": 6.607,
+            "failed_flags": []
+          },
+          "ambiguity_invalid": {
+            "score": 1.0,
+            "seconds": 13.285,
+            "failed_flags": []
+          }
+        }
+      },
+      "evidence_ref": "runs/reference_models/v3/attempts.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false
+    },
+    {
+      "provider": "Reformboss",
+      "endpoint": "https://api.reformboss.com/v1/chat/completions",
+      "model_id": "glm-5.3",
+      "api_type": "CHAT_COMPLETIONS",
+      "tasks": [
+        "GENERAL_PARSE",
+        "CLARIFICATION"
+      ],
+      "parameters": {
+        "max_output_tokens_reference": 2048,
+        "reasoning": null,
+        "reasoning_support": "UNKNOWN"
+      },
+      "approximate_pricing_per_token_usd": null,
+      "price_status": "UNKNOWN_CURRENT_PRICE",
+      "availability_current_key": "NOT_PROVEN_THIS_BUILD",
+      "historical_availability": "COMPLETE_MATCHED_MODEL_RESPONSE",
+      "limit_state_current": "UNKNOWN",
+      "historical_account_limits": null,
+      "error_history": [
+        {
+          "http": null,
+          "error": "TimeoutError",
+          "requested_model": "glm-5.3",
+          "reported_model": null,
+          "at": "2026-10-13T20:32:51.792630+00:00"
+        }
+      ],
+      "observed_latency_seconds_median": 11.434,
+      "requested_model": "glm-5.3",
+      "reported_models_observed": [
+        "glm-5.3"
+      ],
+      "last_successful_test": "2026-10-13T20:34:58.301652+00:00",
+      "confirmation_type": "ARCHIVED_RAW_GATEWAY_RESPONSES",
+      "quality_confidence": "SMALL_SYNTHETIC_SAMPLE_NOT_CALIBRATED",
+      "historical_corrected_quality": {
+        "provider": "Reformboss",
+        "model": "glm-5.3",
+        "dispatched": 4,
+        "http_200": 3,
+        "valid_correct_model": 3,
+        "passed_all_fields": 2,
+        "mean_field_score_completed": 0.849,
+        "latency_success_median": 11.434,
+        "cases": {
+          "holiday_create": {
+            "score": 0.5455,
+            "seconds": 18.135,
+            "failed_flags": [
+              1,
+              5,
+              7,
+              8,
+              9
+            ]
+          },
+          "context_delta": {
+            "score": 1.0,
+            "seconds": 8.202,
+            "failed_flags": []
+          },
+          "evidence_ranking": {
+            "score": null,
+            "seconds": 25.42,
+            "failed_flags": null
+          },
+          "ambiguity_invalid": {
+            "score": 1.0,
+            "seconds": 11.434,
+            "failed_flags": []
+          }
+        }
+      },
+      "evidence_ref": "runs/reference_models/v3/attempts.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false
+    },
+    {
+      "provider": "Reformboss",
+      "endpoint": "https://api.reformboss.com/v1/chat/completions",
+      "model_id": "kimi-k3",
+      "api_type": "CHAT_COMPLETIONS",
+      "tasks": [
+        "GENERAL_PARSE",
+        "CLARIFICATION"
+      ],
+      "parameters": {
+        "max_output_tokens_reference": 2048,
+        "reasoning": null,
+        "reasoning_support": "UNKNOWN"
+      },
+      "approximate_pricing_per_token_usd": null,
+      "price_status": "UNKNOWN_CURRENT_PRICE",
+      "availability_current_key": "NOT_PROVEN_THIS_BUILD",
+      "historical_availability": "COMPLETE_MATCHED_MODEL_RESPONSE",
+      "limit_state_current": "UNKNOWN",
+      "historical_account_limits": null,
+      "error_history": [
+        {
+          "http": null,
+          "error": "TimeoutError",
+          "requested_model": "kimi-k3",
+          "reported_model": null,
+          "at": "2026-10-13T20:30:42.751529+00:00"
+        }
+      ],
+      "observed_latency_seconds_median": 10.207,
+      "requested_model": "kimi-k3",
+      "reported_models_observed": [
+        "kimi-k3"
+      ],
+      "last_successful_test": "2026-10-13T20:35:27.639806+00:00",
+      "confirmation_type": "ARCHIVED_RAW_GATEWAY_RESPONSES",
+      "quality_confidence": "SMALL_SYNTHETIC_SAMPLE_NOT_CALIBRATED",
+      "historical_corrected_quality": {
+        "provider": "Reformboss",
+        "model": "kimi-k3",
+        "dispatched": 4,
+        "http_200": 3,
+        "valid_correct_model": 3,
+        "passed_all_fields": 3,
+        "mean_field_score_completed": 1.0,
+        "latency_success_median": 10.207,
+        "cases": {
+          "holiday_create": {
+            "score": null,
+            "seconds": 25.473,
+            "failed_flags": null
+          },
+          "context_delta": {
+            "score": 1.0,
+            "seconds": 9.524,
+            "failed_flags": []
+          },
+          "evidence_ranking": {
+            "score": 1.0,
+            "seconds": 15.224,
+            "failed_flags": []
+          },
+          "ambiguity_invalid": {
+            "score": 1.0,
+            "seconds": 10.207,
+            "failed_flags": []
+          }
+        }
+      },
+      "evidence_ref": "runs/reference_models/v3/attempts.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false
+    },
+    {
+      "provider": "OneAPI",
+      "endpoint": "https://api.oneapi.id/v1/systemone",
+      "model_id": "jev-1.13",
+      "api_type": "SYSTEM_ONE_CHOICE",
+      "tasks": [
+        "BOUNDED_ACTION_CLASSIFICATION"
+      ],
+      "parameters": {
+        "stream": false,
+        "questions": "choice",
+        "reasoning": null
+      },
+      "approximate_pricing_per_token_usd": {
+        "prompt": "0.000000021",
+        "completion": "0",
+        "input_cache_read": "0",
+        "discount": 0.5
+      },
+      "price_status": "HISTORICAL_CATALOG_20261013",
+      "availability_current_key": "NOT_PROVEN_THIS_BUILD",
+      "limit_state_current": "UNKNOWN",
+      "error_history": [],
+      "observed_latency_seconds_median": 2.4305000000000003,
+      "requested_model": "jev-1.13",
+      "reported_models_observed": [
+        "jev-1.13"
+      ],
+      "last_successful_test": "2026-10-13T20:35:04.362548+00:00",
+      "confirmation_type": "ARCHIVED_RAW_SYSTEMONE_RESPONSES",
+      "quality_confidence": "12_REPLAYS_ONE_AMBIGUOUS_GOLD_LABEL_NOT_PRODUCTION",
+      "evidence_ref": "runs/reference_models/jev/calls.jsonl",
+      "shadow_eligible": true,
+      "live_enabled": false
+    }
+  ],
+  "excluded_experimental_pool": {
+    "Grok": {
+      "reason": "Small saved smoke shows structured-output omissions, latency and reported-ID mismatch; not removed from research",
+      "evidence": {
+        "status": "SMALL_REAL_GATEWAY_SMOKE_NOT_PRODUCTION_VERIFIED",
+        "created_utc": "2026-10-13T20:49:42.335361+00:00",
+        "requests": 4,
+        "complete_http_200": 4,
+        "models": {
+          "grok-chat-fast": [
+            {
+              "case": "hotel_evidence",
+              "http": 200,
+              "reported_model": "grok-chat-fast",
+              "seconds": 3.144,
+              "pass_count": 2,
+              "total_flags": 4,
+              "finish_reason": "stop",
+              "output_tokens": 233
+            }
+          ],
+          "grok-4.7": [
+            {
+              "case": "hotel_evidence",
+              "http": 200,
+              "reported_model": "grok-4.7",
+              "seconds": 51.831,
+              "pass_count": 2,
+              "total_flags": 4,
+              "finish_reason": "stop",
+              "output_tokens": 3770
+            },
+            {
+              "case": "context_delta",
+              "http": 200,
+              "reported_model": "grok-4.7",
+              "seconds": 29.98,
+              "pass_count": 1,
+              "total_flags": 9,
+              "finish_reason": "stop",
+              "output_tokens": 2432
+            }
+          ],
+          "grok-composer-2.5-fast": [
+            {
+              "case": "hotel_evidence",
+              "http": 200,
+              "reported_model": "grok-4.5",
+              "seconds": 47.725,
+              "pass_count": 4,
+              "total_flags": 4,
+              "finish_reason": "stop",
+              "output_tokens": 5405
+            }
+          ]
+        },
+        "caveats": [
+          "Only one hotel task for each model, second task for Grok 4.7",
+          "Proxy returned grok-4.5 for requested grok-composer-2.5-fast; not attributable to requested model",
+          "Grok 4.7 explanations recognized correct action but machine-readable output omitted required fields",
+          "Same temperature=0 across models, not proven optimal for Grok; vendor recommends tuning reasoning effort and Responses API",
+          "completion_tokens exceeded max_tokens on some gateway responses, billing and exact reasoning accounting unconfirmed"
+        ]
+      }
+    }
+  },
+  "live_smoke_this_build": {
+    "status": "NOT_RUN",
+    "new_oneapi_calls": 0,
+    "new_reformboss_calls": 0,
+    "new_jev_calls": 0,
+    "why": "Fresh saved raw journals contain actual responses from both Chat gateways and System One; no new calls needed for offline release. Current free coverage/prices are not proven for a new dispatch.",
+    "current_eligibility": "BLOCKED_UNTIL_CURRENT_FREE_CREDIT_PROOF",
+    "no_claim_of_live_build_e2e": true
+  },
+  "plus_live_smoke": {
+    "status": "BLOCKED_UNKNOWN_OUTCOME",
+    "OneAPI_attempts": 2,
+    "successful_new_inference": 0,
+    "Reformboss_attempts": 0,
+    "Jev_attempts": 0,
+    "reserved_usd": "0.00116466",
+    "automatic_retries": 0,
+    "ledger": "runs/plus_live_attempts.sqlite",
+    "proof": "runs/plus_provider_preflight.json",
+    "result": "runs/plus_live_smoke.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "hotel-search",
+  "version": "1.0.0",
+  "description": "Поиск тарифов по проверенным условиям",
+  "operations": [
+    "archive_search",
+    "live_search"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields",
+    "validated_request"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Зафиксированы источник, параметры, статус и тарифы либо ошибка."
+}

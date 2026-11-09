@@ -1,0 +1,20 @@
+{
+  "id": "proposal-lifecycle",
+  "version": "1.0.0",
+  "description": "Preview, Confirm, Cancel и Undo",
+  "operations": [
+    "prepare_preview",
+    "undo"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Версия и владелец проверены существующим хранилищем."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "request-understanding",
+  "version": "1.2.0",
+  "description": "Понимание запроса и составных правок",
+  "operations": [
+    "understand"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields"
+  ],
+  "depends_on": [],
+  "resources": [
+    "references/intent-protocol.md"
+  ],
+  "completion": "Объект проходит schema, evidence и предметный валидатор."
+}

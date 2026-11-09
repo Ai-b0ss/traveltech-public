@@ -1,0 +1,187 @@
+{
+  "endpoint": "https://mcp.botclaw.ru/travel",
+  "date": "2026-10-13",
+  "request_criteria": {
+    "departure_city": "Москва",
+    "country": "Россия",
+    "resort": "Сочи",
+    "date_from": "2026-10-26",
+    "date_to": "2026-10-26",
+    "nights_min": 2,
+    "nights_max": 2,
+    "adults": 2,
+    "price_max": 30000,
+    "limit": 3
+  },
+  "ledger": [
+    {
+      "method": "initialize",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-06-18",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "travel-search-ru",
+            "version": "2.5.0"
+          }
+        }
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": {
+        "protocolVersion": "2025-06-18",
+        "capabilities": {
+          "experimental": {},
+          "prompts": {
+            "listChanged": false
+          },
+          "resources": {
+            "subscribe": false,
+            "listChanged": false
+          },
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "serverInfo": {
+          "name": "Travel Search RU MCP",
+          "version": "1.5.0"
+        },
+        "instructions": "Поиск путешествий: пакетные туры (перелёт + отель), отели без перелёта,\nавиабилеты, поезда и экскурсии. Только поиск — бронирование и оплата происходят на сайте сервиса\nпо ссылке из результата.\n\nГорода, страны и курорты передавай по-русски («Москва», «Турция», «Кемер») — сервер сам\nсопоставит их со справочниками. Даты — YYYY-MM-DD и не раньше сегодняшнего дня (день и месяц\nбез года — ближайшая будущая дата); месяц для календаря цен — YYYY-MM. Питание — коды\nRO (без питания), BB (завтраки), HB (полупансион), FB (полный пансион), AI (всё включено),\nUAI (ультра всё включено).\n\nДля быстрой подборки только из Travelata используй get_cheapest_travelata_tours. Полный\nпоиск туров занимает 10–15 секунд: сервер параллельно опрашивает два источника и ждёт\nответа туроператоров. Не вызывай search_tours повторно, пока не пришёл ответ. Если\nрезультатов мало — расширь диапазон дат и ночей или сними фильтры (питание, звёзды,\nбюджет), а не повторяй тот же запрос.\n\nsearch_train_tickets использует кэшированное расписание Tutu.ru: дата формирует ссылку,\nно API не подтверждает рейс, наличие мест или цену на выбранный день. Всегда сообщай это\nпользователю и предлагай проверить детали по ссылке.\n\nОшибки: сообщение о неверных параметрах или «Источник отклонил параметры запроса» — исправь\nзапрос, не повторяй его без изменений. «Источник временно недоступен» — сбой у поставщика:\nповтори один раз позже, затем сообщи пользователю. «Слишком много запросов» или «перегружен» —\nподожди минуту."
+      },
+      "seconds": 10.485
+    },
+    {
+      "method": "notifications/initialized",
+      "request": {
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized",
+        "params": {}
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": null,
+      "seconds": 6.072
+    },
+    {
+      "method": "tools/call",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/call",
+        "params": {
+          "name": "search_hotels",
+          "arguments": {
+            "departure_city": "Москва",
+            "country": "Россия",
+            "resort": "Сочи",
+            "date_from": "2026-10-26",
+            "date_to": "2026-10-26",
+            "nights_min": 2,
+            "nights_max": 2,
+            "adults": 2,
+            "price_max": 30000,
+            "limit": 3
+          }
+        }
+      },
+      "credentials_sent": false,
+      "outcome": "RESPONSE",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"offers\": [\n    {\n      \"source\": \"leveltravel\",\n      \"offer_id\": \"leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199071\",\n      \"hotel\": \"Гостишка\",\n      \"stars\": null,\n      \"rating\": null,\n      \"beach_distance_m\": null,\n      \"beach_line\": null,\n      \"center_distance_m\": null,\n      \"resort\": \"Адлерский район\",\n      \"country\": \"Россия\",\n      \"meal\": \"RO\",\n      \"nights\": 2,\n      \"check_in\": \"2026-10-26\",\n      \"price\": 1565,\n      \"currency\": \"RUB\",\n      \"more_offers\": 0,\n      \"url\": \"https://level.tpm.lv/l2fgOBTm\"\n    },\n    {\n      \"source\": \"leveltravel\",\n      \"offer_id\": \"leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9176981\",\n      \"hotel\": \"Гостевой Дом Русалина\",\n      \"stars\": null,\n      \"rating\": null,\n      \"beach_distance_m\": 500,\n      \"beach_line\": 3,\n      \"center_distance_m\": null,\n      \"resort\": \"Сочи\",\n      \"country\": \"Россия\",\n      \"meal\": \"RO\",\n      \"nights\": 2,\n      \"check_in\": \"2026-10-26\",\n      \"price\": 1585,\n      \"currency\": \"RUB\",\n      \"more_offers\": 2,\n      \"url\": \"https://level.tpm.lv/SmF87Eir\"\n    },\n    {\n      \"source\": \"leveltravel\",\n      \"offer_id\": \"leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199086\",\n      \"hotel\": \"Русалина\",\n      \"stars\": null,\n      \"rating\": 9.2,\n      \"beach_distance_m\": 200,\n      \"beach_line\": 2,\n      \"center_distance_m\": null,\n      \"resort\": \"Адлерский район\",\n      \"country\": \"Россия\",\n      \"meal\": \"RO\",\n      \"nights\": 2,\n      \"check_in\": \"2026-10-26\",\n      \"price\": 1585,\n      \"currency\": \"RUB\",\n      \"more_offers\": 0,\n      \"url\": \"https://level.tpm.lv/LzLTzcT6\"\n    }\n  ],\n  \"total_found\": 48,\n  \"sources\": {\n    \"leveltravel\": {\n      \"found\": 50,\n      \"raw_count\": 1130,\n      \"error\": null\n    }\n  },\n  \"notes\": [\n    \"Отели без перелёта ищутся только в Level.Travel.\",\n    \"Цена — за всех туристов и всё проживание. По одному варианту на отель (самый дешёвый); more_offers — сколько ещё дат и вариантов есть у этого отеля.\",\n    \"Цена может измениться — вызовите get_tour_details перед бронированием\",\n    \"offer_id Level.Travel живёт ~20 минут — после этого повторите поиск\"\n  ]\n}"
+          }
+        ],
+        "isError": false
+      },
+      "seconds": 14.528
+    }
+  ],
+  "summary": {
+    "status": "SEARCH_RESPONSE_RECEIVED",
+    "result": {
+      "offers": [
+        {
+          "source": "leveltravel",
+          "offer_id": "leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199071",
+          "hotel": "Гостишка",
+          "stars": null,
+          "rating": null,
+          "beach_distance_m": null,
+          "beach_line": null,
+          "center_distance_m": null,
+          "resort": "Адлерский район",
+          "country": "Россия",
+          "meal": "RO",
+          "nights": 2,
+          "check_in": "2026-10-26",
+          "price": 1565,
+          "currency": "RUB",
+          "more_offers": 0,
+          "url": "https://level.tpm.lv/l2fgOBTm"
+        },
+        {
+          "source": "leveltravel",
+          "offer_id": "leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9176981",
+          "hotel": "Гостевой Дом Русалина",
+          "stars": null,
+          "rating": null,
+          "beach_distance_m": 500,
+          "beach_line": 3,
+          "center_distance_m": null,
+          "resort": "Сочи",
+          "country": "Россия",
+          "meal": "RO",
+          "nights": 2,
+          "check_in": "2026-10-26",
+          "price": 1585,
+          "currency": "RUB",
+          "more_offers": 2,
+          "url": "https://level.tpm.lv/SmF87Eir"
+        },
+        {
+          "source": "leveltravel",
+          "offer_id": "leveltravel:MHwyMjV8MTE4ODIwfDIyNXx8MjAyNi0xMC0yNiwyMDI2LTEwLTI2fDB8MiwyfDJ8MHx8fDB8MXx8fDEzNTM=:9199086",
+          "hotel": "Русалина",
+          "stars": null,
+          "rating": 9.2,
+          "beach_distance_m": 200,
+          "beach_line": 2,
+          "center_distance_m": null,
+          "resort": "Адлерский район",
+          "country": "Россия",
+          "meal": "RO",
+          "nights": 2,
+          "check_in": "2026-10-26",
+          "price": 1585,
+          "currency": "RUB",
+          "more_offers": 0,
+          "url": "https://level.tpm.lv/LzLTzcT6"
+        }
+      ],
+      "total_found": 48,
+      "sources": {
+        "leveltravel": {
+          "found": 50,
+          "raw_count": 1130,
+          "error": null
+        }
+      },
+      "notes": [
+        "Отели без перелёта ищутся только в Level.Travel.",
+        "Цена — за всех туристов и всё проживание. По одному варианту на отель (самый дешёвый); more_offers — сколько ещё дат и вариантов есть у этого отеля.",
+        "Цена может измениться — вызовите get_tour_details перед бронированием",
+        "offer_id Level.Travel живёт ~20 минут — после этого повторите поиск"
+      ]
+    }
+  },
+  "booking_calls": 0,
+  "paid_calls": 0,
+  "automatic_retries": 0,
+  "session_headers_saved": false
+}

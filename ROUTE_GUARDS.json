@@ -1,0 +1,21 @@
+{
+  "blocked": {
+    "OneAPI": {
+      "reason": "UNKNOWN_OUTCOME - do not redispatch or silently switch",
+      "request_id": "100c1ddbd3e945619b23bf0287b9545f",
+      "scenario": "23_nearby_r0",
+      "observed_at": "2026-10-15T04:17:57.564502+00:00",
+      "unblock_requires": "Provider-side outcome and billing reconciliation; a new state directory is not reconciliation."
+    },
+    "InkStone_GLM": {
+      "reason": "Historical InkStone GLM unresolved UNKNOWN_OUTCOME in V1 model benchmark; no new dispatch before reconciliation",
+      "source": "TravelTech_SKILLS_20261015/product/runs/skills_benchmark_20261015/transport/requests.sqlite",
+      "unblock_requires": "Provider-side outcome reconciliation"
+    },
+    "InkStone_MiniMax": {
+      "reason": "Historical InkStone MiniMax unresolved UNKNOWN_OUTCOME in V2 model benchmark; no new dispatch before reconciliation",
+      "source": "TravelTech_SKILLS_V2_20261015/runs/skills_benchmark_20261015/transport/requests.sqlite",
+      "unblock_requires": "Provider-side outcome reconciliation"
+    }
+  }
+}

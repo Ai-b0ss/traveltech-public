@@ -1,0 +1,10 @@
+{
+  "url": "https://i.travelapi.com/lodging/77000000/76890000/76884500/76884488/1b5409a5_b.jpg",
+  "file": "dubai_room.jpg",
+  "sha256": "f76e45e2933d47d13b39c78ef29395b084291a4c62037be5f60859280a5d98b7",
+  "hotel_id": "19831552",
+  "room_id": "5412978",
+  "room_name": "One Bedroom Creek View",
+  "binding": "SOURCE_RATE_RESPONSE_ROOM_IMAGE",
+  "current_condition_verified": false
+}

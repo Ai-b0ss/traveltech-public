@@ -1,0 +1,17 @@
+services:
+  traveltech:
+    build: .
+    init: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - traveltech_data:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,sys,urllib.request; r=urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=3); body=json.load(r); sys.exit(0 if r.status==200 and body=={'status':'ok'} else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+
+volumes:
+  traveltech_data:

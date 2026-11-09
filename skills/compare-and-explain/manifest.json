@@ -1,0 +1,25 @@
+{
+  "id": "compare-and-explain",
+  "version": "1.0.0",
+  "description": "Выбор допустимых вариантов и оснований",
+  "operations": [
+    "compare",
+    "select_evidence"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields",
+    "validated_request",
+    "offers",
+    "facts"
+  ],
+  "depends_on": [
+    "price-and-feasibility"
+  ],
+  "resources": [],
+  "completion": "Выбраны только существующие допустимые ID и связанные факты."
+}

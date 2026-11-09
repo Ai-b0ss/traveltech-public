@@ -1,0 +1,300 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2136,
+      "sha256": "231e5f5ad3e588188e0e759519ea1128078c93b91865bd968e2cccfbbe7a913d"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "bytes": 14465,
+      "sha256": "b6ad98ad589e8e93c2c9287a501b972d5a256c15becb3d444edc8a8156d71954"
+    },
+    {
+      "path": "base/adapters.py",
+      "bytes": 1537,
+      "sha256": "fae71dd959819fc16fbbb625879c58595c17717c8917e52e601f374a8fee0973"
+    },
+    {
+      "path": "base/benchmark.py",
+      "bytes": 2074,
+      "sha256": "c407448dbd0f59d536f0eef8f8bebfa777c98247a51cdcd7ed6fb295099d740c"
+    },
+    {
+      "path": "base/demo.py",
+      "bytes": 2038,
+      "sha256": "b1b9000c7eb4fe8d32a7c98a6cb2d4c7f7791ec0c4d1efaae0d299d09f6bfeb0"
+    },
+    {
+      "path": "base/fixtures/source_capture/tourmind_readonly_dubai.json",
+      "bytes": 21195,
+      "sha256": "a05a4a1dc36d19ce2ba1181df3e2a339a5f6b467d196fb215ce82eb628ad9b1e"
+    },
+    {
+      "path": "base/fixtures/source_capture/tourmind_readonly_dubai_room_rates.json",
+      "bytes": 43250,
+      "sha256": "4aebe8681306dcbefc0817f90204f2cc6dc671241953168a3b633f2f02e2769c"
+    },
+    {
+      "path": "base/fixtures/tourmind_36.json",
+      "bytes": 45002,
+      "sha256": "8be16e039dbdca9add1e887601e7f62f3bc59d031f7cd59f8af917a9e7909911"
+    },
+    {
+      "path": "base/test_core.py",
+      "bytes": 9774,
+      "sha256": "3e0b938934333f7f9f5e70d223ec2bf697022417a2c4b52bbb0d58da3ff0fee6"
+    },
+    {
+      "path": "base/travel_core.py",
+      "bytes": 12753,
+      "sha256": "a1f7262d15de76d9243fa6f658696dc3fc93537164c703f631580c397cd4a999"
+    },
+    {
+      "path": "current_adapter.py",
+      "bytes": 2632,
+      "sha256": "e7290d5edcd80276f8b38b3559915fff7ead958b7ba44877eba81e64329e73eb"
+    },
+    {
+      "path": "evidence.py",
+      "bytes": 5698,
+      "sha256": "fb18a7fa1a6f5f7d9ec69d8c4c2330f9c1bf3da5db7eca3970f493ec4cccf342"
+    },
+    {
+      "path": "fee_disclosure.py",
+      "bytes": 1210,
+      "sha256": "edb7973c961615968bfb5ea9c8ae406f2d789d303054d4b8d775d086fea616a9"
+    },
+    {
+      "path": "probe_occupancy.py",
+      "bytes": 1633,
+      "sha256": "ffa23cc73b01581010b9ae56501f3f353632dcdcda54b7134172612e0efc0a94"
+    },
+    {
+      "path": "probe_selected.py",
+      "bytes": 2931,
+      "sha256": "dd3d0a171dfbbd3b01d769445ca52a3a50a2edbdb8df2e4386596501e2df2568"
+    },
+    {
+      "path": "probe_sources.py",
+      "bytes": 4852,
+      "sha256": "c376af9c0e842195c9f26481b0827859dfd1f7bd25238e2ceb40b4562626ceed"
+    },
+    {
+      "path": "replay_flow.py",
+      "bytes": 2953,
+      "sha256": "328289eb88c7c5d0d92291667b71033deae893cd8958ae05eacef39f9e432a03"
+    },
+    {
+      "path": "resolve_region.py",
+      "bytes": 1223,
+      "sha256": "dad2cfe23d5ebbcc3fecb13304cbb7dbdf263a30a8dda8047fb14705c189fa2a"
+    },
+    {
+      "path": "results/actual_http_call_ledger.json",
+      "bytes": 5577,
+      "sha256": "c23c44fd86bc4f8b86afdf6119c3aaaad3a331047665eb5756e38f55724e89bf"
+    },
+    {
+      "path": "results/captured_rate_metrics.json",
+      "bytes": 1532,
+      "sha256": "4dc4c81b45a982a07ecef6df4c60cbdbfbfd4f7d084474c801c9101e561ff25c"
+    },
+    {
+      "path": "results/connected_replay.json",
+      "bytes": 4879,
+      "sha256": "4aac2602c2db1542fd96ab59c6ad5c0a50e9ce77f689e2a2604e6ef248f03a7b"
+    },
+    {
+      "path": "results/dubai_child6_rates.json",
+      "bytes": 738,
+      "sha256": "c0becbba917832186cebf8bdd5f1345efe522cba8f95f60b34d1ae8d8ab9d52c"
+    },
+    {
+      "path": "results/dubai_location.json",
+      "bytes": 12452,
+      "sha256": "91b6ca3c5766a65ba613de871f5dcf60d57063b5aef63baaf79465cbde325898"
+    },
+    {
+      "path": "results/dubai_sample_detail.json",
+      "bytes": 63009,
+      "sha256": "f632880d403ae6f2a7b9b65013e3b52ab3f7c8250f7fcb85c13d1ef3b26e05d8"
+    },
+    {
+      "path": "results/dubai_sample_rates.json",
+      "bytes": 69173,
+      "sha256": "e01f77cfb9015c957e3c6252fed822c9f9fa26e35dd6fb4c771caad44e3a6fa5"
+    },
+    {
+      "path": "results/dubai_search.json",
+      "bytes": 8543,
+      "sha256": "67d60be5865b3aefef0e4203da4fb15408e3d97f3a488d45d7a28580b09b3a24"
+    },
+    {
+      "path": "results/dubai_two_rooms_rates.json",
+      "bytes": 16228,
+      "sha256": "32f40cbcb3951f9758a4ba13e8b2ce1a7e68ad4347635a969703e0a549606a74"
+    },
+    {
+      "path": "results/istanbul_child6_rates.json",
+      "bytes": 1005,
+      "sha256": "780eae1c618d2fe77c5628a016c554a957050ca64a86351d64d0c28d43673a8a"
+    },
+    {
+      "path": "results/istanbul_location.json",
+      "bytes": 12700,
+      "sha256": "fc16bc8d79fa21034210badf5482461d80b6f24d554c9819bbc78457150f44bb"
+    },
+    {
+      "path": "results/istanbul_sample_detail.json",
+      "bytes": 119831,
+      "sha256": "749631c4e5f96616212325045ff993728fc87a83dc8b1acc3b5be9b1f93a3f03"
+    },
+    {
+      "path": "results/istanbul_sample_rates.json",
+      "bytes": 18807,
+      "sha256": "3d7c708535c7c95f33af58c7e39b5623e893b3440a2d27f3cb690d9ab1e4fdb7"
+    },
+    {
+      "path": "results/istanbul_search.json",
+      "bytes": 8998,
+      "sha256": "2a2527812ecc3f6314082fef5425a96f714157f154e71b52dd643d3340fa6b46"
+    },
+    {
+      "path": "results/istanbul_two_rooms_rates.json",
+      "bytes": 992,
+      "sha256": "3078d2db0e19a23c11e45468a31708f45c280103aa026e58929b2dd0b90460bb"
+    },
+    {
+      "path": "results/kazan_location.json",
+      "bytes": 12424,
+      "sha256": "23cc7f8ade648e271576cf42fac5c5ddef65a361798e36cc41a30a615d371478"
+    },
+    {
+      "path": "results/kazan_search.json",
+      "bytes": 692,
+      "sha256": "d2c202a75abea4d302f11467af5227d6a7c0672494139e8cf60285690bbd9069"
+    },
+    {
+      "path": "results/live_access_attempt.json",
+      "bytes": 11918,
+      "sha256": "dd23893db230375116b4407e1313f344ea62624fc220560cadb496a36a04bb58"
+    },
+    {
+      "path": "results/moscow_corrected_search.json",
+      "bytes": 692,
+      "sha256": "cdb346d2ef7e723d3d32d746dc223d9e5c676165606546adf4c243fb9fcb28ac"
+    },
+    {
+      "path": "results/moscow_corrected_summary.json",
+      "bytes": 211,
+      "sha256": "15325ecee84486c1cadb9adb95e5e15432e7f77c736fed39c21af8446a73145e"
+    },
+    {
+      "path": "results/occupancy_probe_summary.json",
+      "bytes": 2128,
+      "sha256": "64653bde314dda93b325605b9bc99a5392af450f3ea6ef96a996ec034e0529de"
+    },
+    {
+      "path": "results/regional_probe_progress.json",
+      "bytes": 23675,
+      "sha256": "e1037d4e4d2aaeed33c95046108ec2f8fa0b27b3df8da6025a4d93c57dd97f9b"
+    },
+    {
+      "path": "results/regional_probe_summary.json",
+      "bytes": 23675,
+      "sha256": "c68ae8987c08acbacedb1d70316cbcde2e9825554d1f342994eb7c2fe9773fa6"
+    },
+    {
+      "path": "results/rome_location.json",
+      "bytes": 11539,
+      "sha256": "ca2904c5b59a852d026bc6142b7f7d70aae0432a59cdc4e65660a41aaf151324"
+    },
+    {
+      "path": "results/rome_search.json",
+      "bytes": 7429,
+      "sha256": "3533da4917dba4e27836990d50f78eac3adff88425dbccf3f8428e7df63bc637"
+    },
+    {
+      "path": "results/selected_sample_summary.json",
+      "bytes": 991,
+      "sha256": "cec479950d3f2af6a8991029b6f01ca35a92cac3998e57b4b500f177050fcc8f"
+    },
+    {
+      "path": "results/sochi_location.json",
+      "bytes": 11517,
+      "sha256": "2329b39d8e73e14f521f2e11868e304a2559ffb49f962003991998e6ce96a0ff"
+    },
+    {
+      "path": "results/sochi_search.json",
+      "bytes": 693,
+      "sha256": "2b23fe6197cb551a8181e948c0a24913f73af2eba86be63b115ca91e4fae7496"
+    },
+    {
+      "path": "results/test_non_json.json",
+      "bytes": 501,
+      "sha256": "33cdbc9992f5c2750a4b859a0bd533a4c6e3af516d53c5d82369b87dce1c14ba"
+    },
+    {
+      "path": "results/test_oversized.json",
+      "bytes": 452,
+      "sha256": "d6f675f15c9b2d6b1afb295f698a093b549c6e98b5b04b0e83138018a2def8cb"
+    },
+    {
+      "path": "results/test_transport_failure.json",
+      "bytes": 520,
+      "sha256": "e5fcdffa72e23d841ac128218e2a6e81b829effc4e93499ab53b8b1ccaf5f209"
+    },
+    {
+      "path": "results/tests_stage2_regression.log",
+      "bytes": 4005,
+      "sha256": "fe2d71885ef08ad15255bafa3eb2d54af2565b44c029c0c23c4f5a11ebdd01b8"
+    },
+    {
+      "path": "results/tests_stage3.log",
+      "bytes": 4106,
+      "sha256": "bb9432f405ec28f072e448cb75e1d2d7391a5900d03ba386641d79cafb3a3eb4"
+    },
+    {
+      "path": "session.py",
+      "bytes": 3114,
+      "sha256": "c4c5c40773c98563d0fe7716fd0508fbc7832506a4e867c3d1e6db8bb47568b6"
+    },
+    {
+      "path": "test_stage3.py",
+      "bytes": 11015,
+      "sha256": "2e5957ef9b02c9bc76f8eab1c48a1d155fcb24d03d9706d83698d56f4dc9de5e"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2459,
+      "sha256": "0913169dd6d5f07cb73b546717179b49615407cabfb98fdcc19af90e90dba2b0"
+    },
+    {
+      "path": "visual_inspection/dubai_room.jpg",
+      "bytes": 16050,
+      "sha256": "f76e45e2933d47d13b39c78ef29395b084291a4c62037be5f60859280a5d98b7"
+    },
+    {
+      "path": "visual_inspection/dubai_room_origin.json",
+      "bytes": 383,
+      "sha256": "d40e9a4bce16511da080c72ee49bf92a77c5433a83afeef75db918c16917a9aa"
+    },
+    {
+      "path": "visual_inspection/inspection_notes.json",
+      "bytes": 843,
+      "sha256": "3b2ec70e3ae6c0060d273138e72814108d0f26518f2630ce4eef98309ee7e468"
+    },
+    {
+      "path": "visual_inspection/istanbul_room.jpg",
+      "bytes": 22169,
+      "sha256": "3c880690cd8c191a3e40ca0690ec5bf229ebe07bba3f7c4f0d8b1d36ae90c249"
+    },
+    {
+      "path": "visual_inspection/istanbul_room_origin.json",
+      "bytes": 408,
+      "sha256": "655d13dc0b5facc5b5d0c598b3c28f6231f8769ac61d1127fde837a99acc44d9"
+    }
+  ]
+}

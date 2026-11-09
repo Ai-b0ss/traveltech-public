@@ -1,0 +1,27 @@
+{
+  "method": "Assistant visual inspection of two supplier-linked room photographs; not an automated visual pipeline",
+  "photos": [
+    {
+      "file": "dubai_room.jpg",
+      "observation": "Visible bed, pillows, lamps and headboard; tight composition does not show the entire room or creek view.",
+      "not_proven": [
+        "actual room area",
+        "quietness",
+        "accessibility",
+        "creek view from this image",
+        "current condition"
+      ]
+    },
+    {
+      "file": "istanbul_room.jpg",
+      "observation": "Visible bed, chairs, curtains, wall mirror and bedside furniture; courtyard view is not visible.",
+      "not_proven": [
+        "actual room area",
+        "quietness",
+        "courtyard view from this image",
+        "current condition"
+      ]
+    }
+  ],
+  "no_new_hotel_feature_guarantees": true
+}

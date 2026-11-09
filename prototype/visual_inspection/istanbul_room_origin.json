@@ -1,0 +1,10 @@
+{
+  "url": "https://i.travelapi.com/lodging/8000000/8000000/7994200/7994116/76006dad_b.jpg",
+  "file": "istanbul_room.jpg",
+  "sha256": "3c880690cd8c191a3e40ca0690ec5bf229ebe07bba3f7c4f0d8b1d36ae90c249",
+  "hotel_id": "776238",
+  "room_id": "5720592",
+  "room_name": "Standard Double Room, 1 Double Bed, Courtyard View",
+  "binding": "SOURCE_RATE_RESPONSE_ROOM_IMAGE",
+  "current_condition_verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "routes": {
+    "InkStone": {
+      "model": "Atria-Dawn-Preview",
+      "label": "Intern InkStone · Atria Dawn Preview",
+      "pricing": "FREE_PUBLIC_DOCUMENT_RECHECKED_AT_RUNTIME",
+      "role": "orchestration_only_local_constraints_immutable"
+    },
+    "InkStone_InternS2": {
+      "model": "intern-s2",
+      "label": "Intern InkStone · Intern S2",
+      "disable_thinking": true,
+      "pricing": "FREE_PUBLIC_DOCUMENT_RECHECKED_AT_RUNTIME",
+      "role": "orchestration_only_local_constraints_immutable"
+    },
+    "InkStone_AgentsA1": {
+      "model": "Agents-A1",
+      "label": "InkStone Agents-A1",
+      "disable_thinking": true,
+      "pricing": "ZERO_PRICE_CHECKED_AT_RUNTIME",
+      "role": "orchestration_only"
+    }
+  }
+}

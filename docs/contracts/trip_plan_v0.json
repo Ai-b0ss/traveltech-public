@@ -1,0 +1,63 @@
+{
+  "trip_id": "demo-mow-dxb-2026-11",
+  "revision": 0,
+  "travellers": {
+    "adults": 2,
+    "children": [4]
+  },
+  "origin": "Москва",
+  "destination": "Дубай",
+  "start_date": "2026-11-12",
+  "end_date": "2026-11-19",
+  "currency": "RUB",
+  "budget": {
+    "amount": null,
+    "currency": "RUB",
+    "scope": "unspecified"
+  },
+  "hotel": {
+    "name": "Демо-отель, Дубай",
+    "checkin": "2026-11-12",
+    "checkout": "2026-11-19",
+    "amount": "81000.00",
+    "currency": "RUB",
+    "source_mode": "MOCK",
+    "provider": "mock-hotel"
+  },
+  "transport": {
+    "kind": "flight",
+    "departure_at": "2026-11-12T10:00:00+03:00",
+    "arrival_at": "2026-11-12T16:30:00+04:00",
+    "return_departure_at": "2026-11-19T17:40:00+04:00",
+    "return_arrival_at": "2026-11-19T22:05:00+03:00",
+    "amount": "54000.00",
+    "currency": "RUB",
+    "source_mode": "MOCK",
+    "provider": "mock-air"
+  },
+  "transfer": {
+    "kind": "airport_hotel",
+    "fare_scope": "one_way_arrival",
+    "duration_minutes": null,
+    "pickup_at": null,
+    "amount": "5500.00",
+    "currency": "RUB",
+    "source_mode": "MOCK",
+    "provider": "mock-transfer"
+  },
+  "insurance": {
+    "amount": null,
+    "currency": "RUB",
+    "source_mode": "MOCK",
+    "provider": "mock-insurance",
+    "fare_status": "UNKNOWN"
+  },
+  "total_amount": "140500.00",
+  "warnings": [
+    {
+      "code": "PRICE_UNKNOWN",
+      "component": "insurance",
+      "message": "Цена страховки неизвестна. В итог она не входит: это не 0 и не замена другим тарифом."
+    }
+  ]
+}

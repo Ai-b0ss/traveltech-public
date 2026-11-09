@@ -1,0 +1,20 @@
+{
+  "id": "refine-and-repair",
+  "version": "1.0.0",
+  "description": "Локальная правка с сохранением остального",
+  "operations": [
+    "validate_constraints",
+    "prepare_preview"
+  ],
+  "requires": [
+    "request_text",
+    "current_request",
+    "preferences",
+    "revision",
+    "source_mode",
+    "allowed_fields"
+  ],
+  "depends_on": [],
+  "resources": [],
+  "completion": "Patch проверен, затронутые результаты перечислены, Preview ещё не применён."
+}
