@@ -1,5 +1,7 @@
 # TravelTech
 
+[![Public smoke](https://github.com/Ai-b0ss/traveltech-public/actions/workflows/verify-public.yml/badge.svg)](https://github.com/Ai-b0ss/traveltech-public/actions/workflows/verify-public.yml)
+
 **AI-помощник для планирования поездки — от свободного запроса до проверяемого предложения.**
 
 Командный проект ITAM для **О! Хакатона 2026**. Пользователь описывает путешествие обычными словами; система разбирает город, даты, гостей и бюджет, уточняет недостающее, показывает редактируемое предложение и помогает сравнивать варианты отелей.
